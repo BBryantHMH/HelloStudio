@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Courses | Hello Studio</title>
+  <meta name="description" content="Self-paced courses — built primarily for group practice owners, and the ambitious solo practitioners building toward more. Go deep on the business of running a practice with the depth and structure workshops can't give you.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="brand" aria-label="Hello Studio — home"><img src="assets/logo/logo-mark.png" alt="" class="brand-logo" onerror="this.remove(); document.querySelector('.brand-text').style.display='inline';"><span class="brand-text">Hello <em>Studio</em></span></a>
+    <nav aria-label="Primary">
+      <ul class="nav-links">
+        <li><a href="about.html">About</a></li>
+        <li><a href="coaching.html">1:1 Coaching</a></li>
+        <li><a href="studios.html">Studios</a></li>
+        <li><a href="vault.html">The Vault</a></li>
+        <li><a href="blog.html">Journal</a></li>
+      </ul>
+    </nav>
+    <a href="coaching.html#apply" class="btn btn-gold btn-small nav-cta">Work With Me <span class="arr">→</span></a>
+    <button class="nav-toggle" aria-label="Toggle menu" onclick="document.querySelector('.mobile-drawer').classList.toggle('is-open')">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+  </div>
+  <div class="mobile-drawer">
+    <ul>
+      <li><a href="about.html">About</a></li>
+      <li><a href="coaching.html">1:1 Coaching</a></li>
+      <li><a href="studios.html">Studios</a></li>
+      <li><a href="vault.html">The Vault</a></li>
+      <li><a href="blog.html">Journal</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg" aria-hidden="true">
+    <svg viewBox="0 0 1440 720" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+      <path d="M 1100,720 C 1380,720 1500,560 1500,360 C 1500,180 1340,80 1180,140 C 1040,190 980,300 1020,440 C 1050,560 980,640 900,680 C 980,720 1020,720 1100,720 Z" fill="#1E6256" opacity="0.13"/>
+      <path d="M -80,240 C 60,180 220,160 320,260 C 410,350 380,500 240,520 C 80,540 -60,440 -80,320 Z" fill="#1E6256" opacity="0.10"/>
+      <circle cx="720" cy="280" r="220" fill="#E37F52" opacity="0.10"/>
+      <circle cx="720" cy="280" r="150" fill="#E37F52" opacity="0.08"/>
+      <path d="M 1200,180 Q 1240,120 1300,140 Q 1320,200 1280,240 Q 1220,250 1200,180 Z" fill="#E3B84D" opacity="0.35"/>
+      <path d="M 1260,200 Q 1310,160 1360,200 Q 1360,260 1310,280 Q 1260,260 1260,200 Z" fill="#C97A3F" opacity="0.30"/>
+      <path d="M 140,560 Q 200,520 240,580 Q 240,640 180,650 Q 130,620 140,560 Z" fill="#E3B84D" opacity="0.30"/>
+      <circle cx="280" cy="120" r="8" fill="#1E6256" opacity="0.30"/>
+      <circle cx="1340" cy="500" r="10" fill="#E37F52" opacity="0.35"/>
+      <circle cx="100" cy="380" r="6" fill="#E3B84D" opacity="0.40"/>
+    </svg>
+  </div>
+  <div class="hero-inner">
+    <span class="announce"><span class="dot"></span>Coming in 2026 · Waitlist open</span>
+    <p class="eyebrow">Courses</p>
+    <h1>When you're ready <em class="serif-accent">to go deep.</em></h1>
+    <p class="lead sub">A growing library of self-paced courses — comprehensive, sequenced, and built for the parts of running a practice that need more than an hour to unpack.</p>
+    <a href="#waitlist" class="btn btn-gold">Get on the Waitlist <span class="arr">→</span></a>
+  </div>
+</section>
+
+<!-- COURSES IN DEVELOPMENT -->
+<section class="section bg-cream">
+  <div class="container">
+    <div class="text-center mb-lg">
+      <p class="eyebrow">The First Drop</p>
+      <h2>Two flagship courses <em class="serif-accent">in development</em></h2>
+      <p class="lead maxw-720">Each built around hundreds of hours of real-world practice ownership — and the things I wish someone had handed me a decade ago.</p>
+    </div>
+
+    <div class="grid-2" style="margin-top: var(--sp-7); gap: var(--sp-6);">
+
+      <div class="studio-card studio-gps" style="padding: var(--sp-8);">
+        <p class="card-tag">GPS · Group Practice Studio</p>
+        <h3 class="studio-name" style="font-size: 2rem;">The Group Practice Course</h3>
+        <p class="studio-who">For accidental entrepreneurs running real group practices.</p>
+        <p>A step-by-step, self-paced course covering everything from hiring and supervision to KPIs, culture, financial health, and sustainable growth. Designed for owners who've already built something real and need the systems to match.</p>
+        <h4 style="color: var(--pine-deep); margin-top: var(--sp-5);">Inside the course:</h4>
+        <ul class="check-list">
+          <li>8 modules · ~25 video lessons</li>
+          <li>Templates & SOPs you can copy/paste into your practice</li>
+          <li>Private community for course members</li>
+          <li>Optional live Q&A cohorts</li>
+        </ul>
+        <p style="margin-top: var(--sp-4); font-family: var(--font-serif); font-style: italic; color: var(--teal);">Ships when it's done. I'd rather build it right than ship it on a schedule.</p>
+      </div>
+
+      <div class="studio-card studio-sps" style="padding: var(--sp-8);">
+        <p class="card-tag">SPS · Solo Practice Studio</p>
+        <h3 class="studio-name" style="font-size: 2rem;">The Solo Practice Course</h3>
+        <p class="studio-who">For solo therapists building a practice that fits their life.</p>
+        <p>Designed for solo practitioners who want a practice that works without becoming their whole identity. From niche clarity to fee setting, from scheduling to systems, all built around the assumption that you're not trying to scale to 40 clinicians.</p>
+        <h4 style="color: var(--pine-deep); margin-top: var(--sp-5);">Inside the course:</h4>
+        <ul class="check-list">
+          <li>6 modules · ~18 video lessons</li>
+          <li>Fee-setting worksheets & profit calculator</li>
+          <li>Private community for course members</li>
+          <li>Lifetime updates as the course evolves</li>
+        </ul>
+        <p style="margin-top: var(--sp-4); font-family: var(--font-serif); font-style: italic; color: var(--teal);">No hustle culture. No "you should be seeing 30 clients a week." Just practical guidance.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- OUR APPROACH -->
+<section class="section bg-pine">
+  <div class="container-narrow">
+    <div class="text-center mb-lg">
+      <p class="eyebrow">How Studio courses are built</p>
+      <h2>Built from <em class="serif-accent">actual practice</em> — not theory.</h2>
+    </div>
+    <div class="grid-3" style="margin-top: var(--sp-7);">
+      <div>
+        <h3 style="color: var(--cream);">Tested, not theorized</h3>
+        <p style="color: rgba(251,245,233,0.85);">Every framework has been run through a real group practice for years before it shows up in a course.</p>
+      </div>
+      <div>
+        <h3 style="color: var(--cream);">Honest about what's hard</h3>
+        <p style="color: rgba(251,245,233,0.85);">No "six-figure practice in 90 days" promises. Just the actual mechanics, actual timelines, and actual trade-offs.</p>
+      </div>
+      <div>
+        <h3 style="color: var(--cream);">Updated as reality updates</h3>
+        <p style="color: rgba(251,245,233,0.85);">Lifetime access means lifetime updates. When the landscape shifts, the course shifts with it.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WAITLIST -->
+<section id="waitlist" class="section bg-cream-deep">
+  <div class="container-narrow">
+    <div class="text-center mb-lg">
+      <p class="eyebrow">Be the first to know</p>
+      <h2>Waitlist members get <em class="serif-accent">first access + founding-member pricing.</em></h2>
+      <p style="color: var(--muted);">No spam. Just a heads-up when a course opens + a founding-member discount.</p>
+    </div>
+    <form action="https://formsubmit.co/hello@hellostudio.online" method="POST" class="form-card" data-email-to="hello@hellostudio.online" data-subject="Courses Waitlist signup — hellostudio.online" data-success-message="&lt;h3 style=&quot;text-align:center;color:var(--pine-deep);&quot;&gt;You're on the list! 💌&lt;/h3&gt;">
+      <div class="field-row">
+        <div class="field">
+          <label for="firstName">First Name</label>
+          <input id="firstName" name="firstName" type="text" required>
+        </div>
+        <div class="field">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" required>
+        </div>
+      </div>
+      <div class="field">
+        <label for="course">Which course are you most interested in?</label>
+        <select id="course" name="course">
+          <option>The Group Practice Course (GPS)</option>
+          <option>The Solo Practice Course (SPS)</option>
+          <option>Both — tell me about both</option>
+        </select>
+      </div>
+      <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center;">Join the Waitlist <span class="arr">→</span></button>
+    </form>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <img class="footer-logo" src="assets/logo/logo-mark.png" alt="Hello Studio">
+        <p style="color: rgba(251,245,233,0.7); max-width: 320px;">Tools and conversations that move you forward. A sister company to Hello Mental Health.</p>
+      </div>
+      <div>
+        <h4>Studio</h4>
+        <ul>
+          <li><a href="studios.html">Studios</a></li>
+          <li><a href="coaching.html">1:1 Coaching</a></li>
+          <li><a href="workshops.html">Workshops</a></li>
+          <li><a href="courses.html">Courses</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Resources</h4>
+        <ul>
+          <li><a href="vault.html">The Vault</a></li>
+          <li><a href="blog.html">Journal</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Visit</h4>
+        <ul>
+          <li>126 Wellington Place<br>Cincinnati, OH 45219</li>
+          <li><a href="https://hellomentalhealth.com">hellomentalhealth.com ↗</a></li>
+          <li><a href="https://www.instagram.com/hello.mentalhealth/">Instagram ↗</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Hello Studio. All rights reserved.</span>
+      <span>Powered by coffee, community, and creative brains everywhere.</span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Vault | Hello Studio</title>
+  <meta name="description" content="The Vault is a growing library of tools, templates, and resources — built primarily for group practice owners, and the ambitious solo practitioners building toward more. Free and paid, organized by topic.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="brand" aria-label="Hello Studio — home"><img src="assets/logo/logo-mark.png" alt="" class="brand-logo" onerror="this.remove(); document.querySelector('.brand-text').style.display='inline';"><span class="brand-text">Hello <em>Studio</em></span></a>
+    <nav aria-label="Primary">
+      <ul class="nav-links">
+        <li><a href="about.html">About</a></li>
+        <li><a href="coaching.html">1:1 Coaching</a></li>
+        <li><a href="studios.html">Studios</a></li>
+        <li><a href="vault.html" aria-current="page">The Vault</a></li>
+        <li><a href="blog.html">Journal</a></li>
+      </ul>
+    </nav>
+    <a href="coaching.html#apply" class="btn btn-gold btn-small nav-cta">Work With Me <span class="arr">→</span></a>
+    <button class="nav-toggle" aria-label="Toggle menu" onclick="document.querySelector('.mobile-drawer').classList.toggle('is-open')">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+  </div>
+  <div class="mobile-drawer">
+    <ul>
+      <li><a href="about.html">About</a></li>
+      <li><a href="coaching.html">1:1 Coaching</a></li>
+      <li><a href="studios.html">Studios</a></li>
+      <li><a href="vault.html">The Vault</a></li>
+      <li><a href="blog.html">Journal</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg" aria-hidden="true">
+    <svg viewBox="0 0 1440 720" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+      <path d="M 1100,720 C 1380,720 1500,560 1500,360 C 1500,180 1340,80 1180,140 C 1040,190 980,300 1020,440 C 1050,560 980,640 900,680 C 980,720 1020,720 1100,720 Z" fill="#1E6256" opacity="0.13"/>
+      <path d="M -80,240 C 60,180 220,160 320,260 C 410,350 380,500 240,520 C 80,540 -60,440 -80,320 Z" fill="#1E6256" opacity="0.10"/>
+      <circle cx="720" cy="280" r="220" fill="#E37F52" opacity="0.10"/>
+      <circle cx="720" cy="280" r="150" fill="#E37F52" opacity="0.08"/>
+      <path d="M 1200,180 Q 1240,120 1300,140 Q 1320,200 1280,240 Q 1220,250 1200,180 Z" fill="#E3B84D" opacity="0.35"/>
+      <path d="M 1260,200 Q 1310,160 1360,200 Q 1360,260 1310,280 Q 1260,260 1260,200 Z" fill="#C97A3F" opacity="0.30"/>
+      <path d="M 140,560 Q 200,520 240,580 Q 240,640 180,650 Q 130,620 140,560 Z" fill="#E3B84D" opacity="0.30"/>
+      <circle cx="280" cy="120" r="8" fill="#1E6256" opacity="0.30"/>
+      <circle cx="1340" cy="500" r="10" fill="#E37F52" opacity="0.35"/>
+      <circle cx="100" cy="380" r="6" fill="#E3B84D" opacity="0.40"/>
+    </svg>
+  </div>
+  <div class="hero-inner">
+    <p class="eyebrow">Resources Library</p>
+    <h1>The <em class="serif-accent">Vault.</em></h1>
+    <p class="lead sub">A growing library of tools, templates, and brilliance borrowed from a decade of actually running a practice. Free and paid, all in one place.</p>
+  </div>
+</section>
+
+<!-- FILTERS -->
+<section class="section-sm bg-cream">
+  <div class="container">
+    <div class="tag-row" style="justify-content: center;">
+      <a href="#" class="tag is-active">All</a>
+      <a href="#" class="tag">Free</a>
+      <a href="#" class="tag">Templates</a>
+      <a href="#" class="tag">Worksheets</a>
+      <a href="#" class="tag">Guides</a>
+      <a href="#" class="tag">Spreadsheets</a>
+      <a href="#" class="tag">Group Practice</a>
+      <a href="#" class="tag">Solo Practice</a>
+      <a href="#" class="tag">Admin</a>
+    </div>
+  </div>
+</section>
+
+<!-- VAULT GRID -->
+<section class="section bg-cream">
+  <div class="container">
+    <div class="grid-3">
+
+      <div class="card">
+        <span class="card-tag" style="background: var(--gold); color: var(--pine-deep);">Free</span>
+        <h3>The Weekly KPI Dashboard</h3>
+        <p>A simple Google Sheet for tracking the five numbers every group practice owner should look at each week.</p>
+        <a href="#" class="btn btn-ghost btn-small" style="align-self: flex-start; margin-top: var(--sp-3);">Get it free <span class="arr">→</span></a>
+      </div>
+
+      <div class="card">
+        <span class="card-tag" style="background: var(--gold); color: var(--pine-deep);">Free</span>
+        <h3>Fee-Setting Worksheet</h3>
+        <p>A walk-through that helps solo and group practices set fees that cover overhead, taxes, and an actual life.</p>
+        <a href="#" class="btn btn-ghost btn-small" style="align-self: flex-start; margin-top: var(--sp-3);">Get it free <span class="arr">→</span></a>
+      </div>
+
+      <div class="card">
+        <span class="card-tag">Template · $29</span>
+        <h3>Clinician Onboarding Checklist</h3>
+        <p>The exact onboarding flow I use at Hello Mental Health. 30 days, step by step, with templates for every touchpoint.</p>
+        <a href="#" class="btn btn-ghost btn-small" style="align-self: flex-start; margin-top: var(--sp-3);">Preview <span class="arr">→</span></a>
+      </div>
+
+      <div class="card">
+        <span class="card-tag">Template · $49</span>
+        <h3>Supervision Contract Pack</h3>
+        <p>A lawyer-reviewed supervision contract (Ohio-compliant, adaptable) plus a supervision agenda template your supervisees will actually love.</p>
+        <a href="#" class="btn btn-ghost btn-small" style="align-self: flex-start; margin-top: var(--sp-3);">Preview <span class="arr">→</span></a>
+      </div>
+
+      <div class="card">
+        <span class="card-tag" style="background: var(--gold); color: var(--pine-deep);">Free</span>
+        <h3>The Quarterly Owner Reset</h3>
+        <p>A two-page worksheet to run your own 90-minute quarterly planning session. Replaces the "I'll figure it out on a long drive" approach.</p>
+        <a href="#" class="btn btn-ghost btn-small" style="align-self: flex-start; margin-top: var(--sp-3);">Get it free <span class="arr">→</span></a>
+      </div>
+
+      <div class="card">
+        <span class="card-tag">Guide · $15</span>
+        <h3>EHR Selection Cheat-Sheet</h3>
+        <p>A frank side-by-side of the top five EHRs for private practice. What they're great at, what drives everyone crazy.</p>
+        <a href="#" class="btn btn-ghost btn-small" style="align-self: flex-start; margin-top: var(--sp-3);">Preview <span class="arr">→</span></a>
+      </div>
+
+      <div class="card">
+        <span class="card-tag">Template · $39</span>
+        <h3>Team Handbook Starter</h3>
+        <p>A customizable handbook covering time off, compensation, benefits, communication norms, and the parts most handbooks forget.</p>
+        <a href="#" class="btn btn-ghost btn-small" style="align-self: flex-start; margin-top: var(--sp-3);">Preview <span class="arr">→</span></a>
+      </div>
+
+      <div class="card">
+        <span class="card-tag" style="background: var(--gold); color: var(--pine-deep);">Free</span>
+        <h3>The "Am I The Bottleneck?" Diagnostic</h3>
+        <p>Ten yes/no questions to pinpoint exactly where you are (or aren't) the bottleneck in your own business.</p>
+        <a href="#" class="btn btn-ghost btn-small" style="align-self: flex-start; margin-top: var(--sp-3);">Get it free <span class="arr">→</span></a>
+      </div>
+
+      <div class="card card-gold" style="justify-content: center; text-align: center;">
+        <h3 style="margin-bottom: var(--sp-3);">More coming each month.</h3>
+        <p>The Vault grows as I build things for my own practice and for coaching clients. Join the list to know when the next one drops.</p>
+        <a href="#subscribe" class="btn btn-primary btn-small" style="align-self: center; margin-top: var(--sp-3);">Join the list <span class="arr">→</span></a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- SUBSCRIBE -->
+<section id="subscribe" class="section bg-pine">
+  <div class="container-narrow text-center">
+    <p class="eyebrow">Get new Vault resources in your inbox</p>
+    <h2>Drop your email, <em class="serif-accent">we'll send new resources as they land.</em></h2>
+    <form action="https://formsubmit.co/hello@hellostudio.online" method="POST" style="max-width: 440px; margin: var(--sp-6) auto 0; display: flex; gap: 8px; flex-wrap: wrap;" data-email-to="hello@hellostudio.online" data-subject="Vault Newsletter signup — hellostudio.online" data-success-message="&lt;p style=&quot;color:var(--cream);margin:0;&quot;&gt;You're on the list! 💌&lt;/p&gt;">
+      <input type="email" name="email" placeholder="you@yourpractice.com" required style="flex:1; padding: 14px 18px; border: 0; border-radius: var(--r-pill); font-family: var(--font-sans); font-size: 1rem;">
+      <button type="submit" class="btn btn-gold">Subscribe</button>
+    </form>
+    <p style="font-size: 0.85rem; color: rgba(251,245,233,0.6); margin-top: var(--sp-4);">No spam. Just tools. Unsubscribe anytime.</p>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <img class="footer-logo" src="assets/logo/logo-mark.png" alt="Hello Studio">
+        <p style="color: rgba(251,245,233,0.7); max-width: 320px;">Tools and conversations that move you forward. A sister company to Hello Mental Health.</p>
+      </div>
+      <div>
+        <h4>Studio</h4>
+        <ul>
+          <li><a href="studios.html">Studios</a></li>
+          <li><a href="coaching.html">1:1 Coaching</a></li>
+          <li><a href="workshops.html">Workshops</a></li>
+          <li><a href="courses.html">Courses</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Resources</h4>
+        <ul>
+          <li><a href="vault.html">The Vault</a></li>
+          <li><a href="blog.html">Journal</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Visit</h4>
+        <ul>
+          <li>126 Wellington Place<br>Cincinnati, OH 45219</li>
+          <li><a href="https://hellomentalhealth.com">hellomentalhealth.com ↗</a></li>
+          <li><a href="https://www.instagram.com/hello.mentalhealth/">Instagram ↗</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Hello Studio. All rights reserved.</span>
+      <span>Powered by coffee, community, and creative brains everywhere.</span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

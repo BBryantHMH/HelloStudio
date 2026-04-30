@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Hello Studio</title>
+  <meta name="description" content="Get in touch with Hello Studio. Inquiries about coaching, speaking, workshops, or just a hello — Bailey reads every message personally.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="brand" aria-label="Hello Studio — home"><img src="assets/logo/logo-mark.png" alt="" class="brand-logo" onerror="this.remove(); document.querySelector('.brand-text').style.display='inline';"><span class="brand-text">Hello <em>Studio</em></span></a>
+    <nav aria-label="Primary">
+      <ul class="nav-links">
+        <li><a href="about.html">About</a></li>
+        <li><a href="coaching.html">1:1 Coaching</a></li>
+        <li><a href="studios.html">Studios</a></li>
+        <li><a href="vault.html">The Vault</a></li>
+        <li><a href="blog.html">Journal</a></li>
+      </ul>
+    </nav>
+    <a href="#message" class="btn btn-gold btn-small nav-cta">Say Hello <span class="arr">→</span></a>
+    <button class="nav-toggle" aria-label="Toggle menu" onclick="document.querySelector('.mobile-drawer').classList.toggle('is-open')">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+  </div>
+  <div class="mobile-drawer">
+    <ul>
+      <li><a href="about.html">About</a></li>
+      <li><a href="coaching.html">1:1 Coaching</a></li>
+      <li><a href="studios.html">Studios</a></li>
+      <li><a href="vault.html">The Vault</a></li>
+      <li><a href="blog.html">Journal</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg" aria-hidden="true">
+    <svg viewBox="0 0 1440 720" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+      <path d="M 1100,720 C 1380,720 1500,560 1500,360 C 1500,180 1340,80 1180,140 C 1040,190 980,300 1020,440 C 1050,560 980,640 900,680 C 980,720 1020,720 1100,720 Z" fill="#1E6256" opacity="0.13"/>
+      <path d="M -80,240 C 60,180 220,160 320,260 C 410,350 380,500 240,520 C 80,540 -60,440 -80,320 Z" fill="#1E6256" opacity="0.10"/>
+      <circle cx="720" cy="280" r="220" fill="#E37F52" opacity="0.10"/>
+      <circle cx="720" cy="280" r="150" fill="#E37F52" opacity="0.08"/>
+      <path d="M 1200,180 Q 1240,120 1300,140 Q 1320,200 1280,240 Q 1220,250 1200,180 Z" fill="#E3B84D" opacity="0.35"/>
+      <path d="M 1260,200 Q 1310,160 1360,200 Q 1360,260 1310,280 Q 1260,260 1260,200 Z" fill="#C97A3F" opacity="0.30"/>
+      <path d="M 140,560 Q 200,520 240,580 Q 240,640 180,650 Q 130,620 140,560 Z" fill="#E3B84D" opacity="0.30"/>
+      <circle cx="280" cy="120" r="8" fill="#1E6256" opacity="0.30"/>
+      <circle cx="1340" cy="500" r="10" fill="#E37F52" opacity="0.35"/>
+      <circle cx="100" cy="380" r="6" fill="#E3B84D" opacity="0.40"/>
+    </svg>
+  </div>
+  <div class="hero-inner">
+    <p class="eyebrow">Get in Touch</p>
+    <h1>Let's <em class="serif-accent">talk.</em></h1>
+    <p class="lead sub">Whether you're ready to explore coaching, curious about something on the Studios page, thinking about speaking or collaboration — drop a note. Bailey reads every message personally.</p>
+  </div>
+</section>
+
+<!-- INTENT PATHS -->
+<section class="section-sm bg-cream">
+  <div class="container">
+    <div class="grid-4" style="gap: var(--sp-4);">
+      <a href="coaching.html#apply" class="card" style="text-decoration: none; border-color: var(--line); text-align: center;">
+        <h3 style="font-size: 1.1rem;">1:1 Coaching Inquiry</h3>
+        <p style="font-size: 0.9rem; color: var(--muted); margin: 0;">Apply through the coaching page for the full intake.</p>
+      </a>
+      <a href="#message" class="card" style="text-decoration: none; border-color: var(--line); text-align: center;">
+        <h3 style="font-size: 1.1rem;">General Message</h3>
+        <p style="font-size: 0.9rem; color: var(--muted); margin: 0;">Questions, hellos, or anything else.</p>
+      </a>
+      <a href="#message" class="card" style="text-decoration: none; border-color: var(--line); text-align: center;">
+        <h3 style="font-size: 1.1rem;">Speaking & Press</h3>
+        <p style="font-size: 0.9rem; color: var(--muted); margin: 0;">Keynotes, podcasts, interviews.</p>
+      </a>
+      <a href="#message" class="card" style="text-decoration: none; border-color: var(--line); text-align: center;">
+        <h3 style="font-size: 1.1rem;">Collaboration</h3>
+        <p style="font-size: 0.9rem; color: var(--muted); margin: 0;">Workshops, guest content, partnerships.</p>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT FORM -->
+<section id="message" class="section bg-cream-deep">
+  <div class="container-narrow">
+    <div class="grid-2" style="gap: var(--sp-7); align-items: flex-start;">
+      <div>
+        <p class="eyebrow">Send a note</p>
+        <h2>Drop a message.</h2>
+        <p>Tell me a little about where you are and what you're working on — I read every message personally and love getting into the details.</p>
+        <div style="margin-top: var(--sp-6);">
+          <h4 style="margin-bottom: var(--sp-2);">Response time</h4>
+          <p style="color: var(--ink-soft);">Within 1–2 business days (Mon–Thurs).</p>
+        </div>
+        <div style="margin-top: var(--sp-5);">
+          <h4 style="margin-bottom: var(--sp-2);">Visit</h4>
+          <p style="color: var(--ink-soft);">126 Wellington Place<br>Cincinnati, OH 45219</p>
+        </div>
+        <div style="margin-top: var(--sp-5);">
+          <h4 style="margin-bottom: var(--sp-2);">Email directly</h4>
+          <p style="color: var(--ink-soft);"><a href="mailto:hello@hellostudio.online">hello@hellostudio.online</a></p>
+        </div>
+        <div style="margin-top: var(--sp-5);">
+          <h4 style="margin-bottom: var(--sp-2);">Find Bailey online</h4>
+          <p style="color: var(--ink-soft);"><a href="https://hellomentalhealth.com">Hello Mental Health ↗</a><br><a href="https://www.instagram.com/hello.mentalhealth/">Instagram ↗</a></p>
+        </div>
+      </div>
+
+      <form action="https://formsubmit.co/hello@hellostudio.online" method="POST" class="form-card" data-email-to="hello@hellostudio.online" data-subject="New message — hellostudio.online contact form" data-success-message="&lt;h3 style=&quot;text-align:center;color:var(--pine-deep);&quot;&gt;Got it! Your message is in good hands. 💌&lt;/h3&gt;&lt;p style=&quot;text-align:center;color:var(--ink-soft);&quot;&gt;Thanks for reaching out. I'll be in touch within 1–2 business days.&lt;/p&gt;&lt;p style=&quot;text-align:center;color:var(--muted);font-size:0.9rem;&quot;&gt;In the meantime, feel free to browse &lt;a href=&quot;studios.html&quot;&gt;the Studios&lt;/a&gt; or &lt;a href=&quot;vault.html&quot;&gt;the Vault&lt;/a&gt;.&lt;/p&gt;">
+        <div class="field-row">
+          <div class="field">
+            <label for="firstName">First Name</label>
+            <input id="firstName" name="firstName" type="text" required>
+          </div>
+          <div class="field">
+            <label for="lastName">Last Name</label>
+            <input id="lastName" name="lastName" type="text" required>
+          </div>
+        </div>
+        <div class="field">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" required>
+        </div>
+        <div class="field">
+          <label for="topic">What's this about?</label>
+          <select id="topic" name="topic">
+            <option>1:1 Coaching inquiry</option>
+            <option>General question</option>
+            <option>Speaking / press inquiry</option>
+            <option>Collaboration / partnership</option>
+            <option>Just saying hi</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="messageBody">Your message</label>
+          <textarea id="messageBody" name="messageBody" placeholder="Tell me what's on your mind…"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center;">Send Message <span class="arr">→</span></button>
+        <p style="text-align: center; margin-top: var(--sp-4); font-size: 0.9rem; color: var(--muted);">— Bailey, your Studio Guide ✨</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <img class="footer-logo" src="assets/logo/logo-mark.png" alt="Hello Studio">
+        <p style="color: rgba(251,245,233,0.7); max-width: 320px;">Tools and conversations that move you forward. A sister company to Hello Mental Health.</p>
+      </div>
+      <div>
+        <h4>Studio</h4>
+        <ul>
+          <li><a href="studios.html">Studios</a></li>
+          <li><a href="coaching.html">1:1 Coaching</a></li>
+          <li><a href="workshops.html">Workshops</a></li>
+          <li><a href="courses.html">Courses</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Resources</h4>
+        <ul>
+          <li><a href="vault.html">The Vault</a></li>
+          <li><a href="blog.html">Journal</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Visit</h4>
+        <ul>
+          <li>126 Wellington Place<br>Cincinnati, OH 45219</li>
+          <li><a href="https://hellomentalhealth.com">hellomentalhealth.com ↗</a></li>
+          <li><a href="https://www.instagram.com/hello.mentalhealth/">Instagram ↗</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Hello Studio. All rights reserved.</span>
+      <span>Powered by coffee, community, and creative brains everywhere.</span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
