@@ -1,0 +1,37 @@
+# Hello Studio — git ignore rules
+# Anything matching these patterns will not be tracked by git
+# (i.e. won't be uploaded to GitHub, won't be deployed by Netlify).
+
+# ---- Mac / Windows clutter ----
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ---- Original (uncompressed) video files ----
+# Keep these on your laptop, not in the repo.
+*.mov
+*.MOV
+*.mkv
+
+# ---- Office / spreadsheet lock files ----
+# Created automatically when you open .docx/.xlsx files.
+~$*
+.~lock.*
+*.xlsx#
+
+# ---- Editor swap files ----
+*.swp
+*.swo
+*~
+
+# ---- Local secrets ----
+.env
+.env.*
+!.env.example
+
+# ---- Build output (only relevant if you add tooling later) ----
+node_modules/
+dist/
+build/
+.next/
+.cache/
