@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Analytics — Hello Studio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .dash-wrap { max-width: 1200px; margin: 0 auto; padding: 2rem 1.5rem 5rem; }
+    .dash-header { display: flex; justify-content: space-between; align-items: flex-end; flex-wrap: wrap; gap: 1rem; margin-bottom: 2rem; }
+    .dash-header h1 { font-size: clamp(2rem, 4vw, 3rem); margin: 0 0 0.25rem; }
+    .dash-header p { color: var(--muted); margin: 0; }
+    .dash-controls { display: flex; gap: 0.5rem; align-items: center; }
+    .dash-controls select, .dash-controls button {
+      font-family: var(--font-sans); font-size: 0.95rem;
+      border: 1px solid var(--line); background: var(--paper);
+      border-radius: var(--r-sm); padding: 0.5rem 0.75rem; color: var(--pine);
+      cursor: pointer;
+    }
+    .dash-controls button:hover { background: var(--cream-deep); }
+
+    .stat-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-bottom: 2rem; }
+    .stat-card {
+      background: var(--paper); border: 1px solid var(--line);
+      border-radius: var(--r-md); padding: 1.25rem 1.5rem; box-shadow: var(--shadow-sm);
+    }
+    .stat-card .label { font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); font-weight: 600; }
+    .stat-card .value { font-family: var(--font-display); font-size: 2.4rem; color: var(--pine-deep); margin-top: 0.4rem; line-height: 1; }
+    .stat-card .sub { color: var(--muted); font-size: 0.85rem; margin-top: 0.4rem; }
+
+    .panel-grid { display: grid; grid-template-columns: 1fr; gap: 1.25rem; margin-bottom: 1.25rem; }
+    @media (min-width: 900px) {
+      .panel-grid.two { grid-template-columns: 1fr 1fr; }
+      .panel-grid.three { grid-template-columns: 1fr 1fr 1fr; }
+    }
+    .panel {
+      background: var(--paper); border: 1px solid var(--line);
+      border-radius: var(--r-md); padding: 1.25rem 1.5rem; box-shadow: var(--shadow-sm);
+    }
+    .panel h2 { font-size: 1.15rem; font-family: var(--font-sans); font-weight: 600; color: var(--pine-deep); margin: 0 0 1rem; letter-spacing: 0.01em; }
+
+    table.dash-table { width: 100%; border-collapse: collapse; font-size: 0.92rem; }
+    table.dash-table th { text-align: left; font-weight: 600; color: var(--muted); padding: 0.5rem 0.5rem; border-bottom: 1px solid var(--line); font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.06em; }
+    table.dash-table td { padding: 0.55rem 0.5rem; border-bottom: 1px solid var(--cream-deep); color: var(--ink-soft); vertical-align: top; }
+    table.dash-table tr:last-child td { border-bottom: none; }
+    table.dash-table .num { text-align: right; font-variant-numeric: tabular-nums; color: var(--pine-deep); font-weight: 600; }
+    table.dash-table .truncate { max-width: 260px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+
+    .bar { display: block; height: 8px; background: var(--cream-deep); border-radius: 4px; overflow: hidden; margin-top: 0.25rem; }
+    .bar > i { display: block; height: 100%; background: linear-gradient(90deg, var(--teal), var(--gold)); }
+
+    .chart { width: 100%; height: 220px; }
+    .chart .axis { stroke: var(--line); stroke-width: 1; }
+    .chart .grid { stroke: var(--cream-deep); stroke-width: 1; }
+    .chart .area { fill: rgba(70,152,136,0.15); }
+    .chart .line { stroke: var(--teal); stroke-width: 2; fill: none; }
+    .chart .dot { fill: var(--gold); }
+    .chart text { fill: var(--muted); font-size: 11px; font-family: var(--font-sans); }
+
+    .login-card { max-width: 420px; margin: 5rem auto; }
+    .login-card input { width: 100%; padding: 0.75rem 1rem; border: 1px solid var(--line); border-radius: var(--r-sm); font-family: var(--font-sans); font-size: 1rem; margin-bottom: 1rem; background: var(--paper); }
+    .login-card .btn { width: 100%; }
+    .login-error { color: #b22; font-size: 0.9rem; margin-top: -0.5rem; margin-bottom: 1rem; }
+
+    .empty { color: var(--muted); padding: 1.5rem 0; text-align: center; }
+    .loading { color: var(--muted); padding: 3rem 0; text-align: center; }
+
+    .recent-row { display: grid; grid-template-columns: 1fr auto; gap: 0.5rem 1rem; padding: 0.6rem 0; border-bottom: 1px solid var(--cream-deep); }
+    .recent-row:last-child { border-bottom: none; }
+    .recent-meta { color: var(--muted); font-size: 0.82rem; }
+    .recent-time { color: var(--muted); font-size: 0.82rem; white-space: nowrap; font-variant-numeric: tabular-nums; }
+    .recent-path { font-weight: 600; color: var(--pine-deep); word-break: break-all; }
+
+    .pill { display: inline-block; padding: 0.15rem 0.55rem; border-radius: var(--r-pill); background: var(--cream-deep); color: var(--pine); font-size: 0.75rem; margin-right: 0.25rem; }
+
+    .back-link { color: var(--teal); text-decoration: none; font-weight: 600; font-size: 0.9rem; }
+    .back-link:hover { color: var(--pine-deep); }
+  </style>
+</head>
+<body>
+
+<div class="dash-wrap">
+
+  <div class="dash-header">
+    <div>
+      <h1>Analytics</h1>
+      <p>User activity across hellostudio.online — <a href="index.html" class="back-link">← back to site</a></p>
+    </div>
+    <div class="dash-controls" id="controls" hidden>
+      <label for="range" style="font-size:0.85rem;color:var(--muted);">Range</label>
+      <select id="range">
+        <option value="1">Today</option>
+        <option value="7">Last 7 days</option>
+        <option value="30" selected>Last 30 days</option>
+        <option value="90">Last 90 days</option>
+        <option value="365">Last year</option>
+      </select>
+      <button id="refresh" type="button">Refresh</button>
+    </div>
+  </div>
+
+  <div id="login" class="panel login-card" hidden>
+    <h2 style="font-family:var(--font-display);font-size:1.4rem;font-weight:400;">Enter dashboard password</h2>
+    <p style="color:var(--muted);margin-top:0;">Set <code>ANALYTICS_PASSWORD</code> in your Netlify environment variables to protect this page.</p>
+    <input type="password" id="pwd" placeholder="Password" autocomplete="current-password">
+    <div class="login-error" id="login-error" hidden>Wrong password — try again.</div>
+    <button class="btn btn-gold" id="login-btn" type="button">Unlock</button>
+  </div>
+
+  <div id="loading" class="loading">Loading analytics…</div>
+
+  <div id="dashboard" hidden>
+
+    <div class="stat-grid">
+      <div class="stat-card"><div class="label">Page Views</div><div class="value" id="s-views">—</div><div class="sub" id="s-views-sub"></div></div>
+      <div class="stat-card"><div class="label">Unique Visitors</div><div class="value" id="s-visitors">—</div><div class="sub" id="s-visitors-sub"></div></div>
+      <div class="stat-card"><div class="label">Sessions</div><div class="value" id="s-sessions">—</div><div class="sub" id="s-sessions-sub"></div></div>
+      <div class="stat-card"><div class="label">Views / Visitor</div><div class="value" id="s-vpv">—</div><div class="sub">avg in range</div></div>
+    </div>
+
+    <div class="panel" style="margin-bottom:1.25rem;">
+      <h2>Traffic over time</h2>
+      <svg class="chart" id="chart" viewBox="0 0 800 220" preserveAspectRatio="none"></svg>
+    </div>
+
+    <div class="panel-grid two">
+      <div class="panel">
+        <h2>Top pages</h2>
+        <table class="dash-table"><thead><tr><th>Path</th><th class="num">Views</th><th class="num">Visitors</th></tr></thead><tbody id="t-pages"></tbody></table>
+      </div>
+      <div class="panel">
+        <h2>Referrers</h2>
+        <table class="dash-table"><thead><tr><th>Source</th><th class="num">Views</th></tr></thead><tbody id="t-refs"></tbody></table>
+      </div>
+    </div>
+
+    <div class="panel-grid two">
+      <div class="panel">
+        <h2>Countries</h2>
+        <table class="dash-table"><thead><tr><th>Country</th><th class="num">Views</th><th class="num">Visitors</th></tr></thead><tbody id="t-countries"></tbody></table>
+      </div>
+      <div class="panel">
+        <h2>Cities</h2>
+        <table class="dash-table"><thead><tr><th>City</th><th class="num">Views</th></tr></thead><tbody id="t-cities"></tbody></table>
+      </div>
+    </div>
+
+    <div class="panel-grid two">
+      <div class="panel">
+        <h2>Devices</h2>
+        <table class="dash-table"><thead><tr><th>Device</th><th class="num">Views</th><th>Share</th></tr></thead><tbody id="t-devices"></tbody></table>
+      </div>
+      <div class="panel">
+        <h2>Browsers</h2>
+        <table class="dash-table"><thead><tr><th>Browser</th><th class="num">Views</th><th>Share</th></tr></thead><tbody id="t-browsers"></tbody></table>
+      </div>
+    </div>
+
+    <div class="panel" style="margin-bottom:1.25rem;">
+      <h2>Recent sessions</h2>
+      <table class="dash-table"><thead><tr><th>Started</th><th>Location</th><th>Device</th><th class="num">Pages</th><th>Duration</th></tr></thead><tbody id="t-sessions"></tbody></table>
+    </div>
+
+    <div class="panel">
+      <h2>Live activity</h2>
+      <div id="t-recent"></div>
+    </div>
+
+  </div>
+</div>
+
+<script>
+(function () {
+  'use strict';
+
+  const PWD_KEY = 'hs_analytics_pwd';
+
+  const $ = (id) => document.getElementById(id);
+  const fmt = (n) => (n == null ? '—' : Number(n).toLocaleString());
+
+  function escapeHtml(s) {
+    return String(s == null ? '' : s)
+      .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;').replace(/'/g, '&#39;');
+  }
+
+  function relTime(iso) {
+    const t = new Date(iso).getTime();
+    const diff = Math.max(0, Date.now() - t);
+    const s = Math.floor(diff / 1000);
+    if (s < 60) return s + 's ago';
+    const m = Math.floor(s / 60);
+    if (m < 60) return m + 'm ago';
+    const h = Math.floor(m / 60);
+    if (h < 24) return h + 'h ago';
+    const d = Math.floor(h / 24);
+    return d + 'd ago';
+  }
+
+  function formatDuration(ms) {
+    if (!ms || ms < 1000) return '—';
+    const s = Math.round(ms / 1000);
+    if (s < 60) return s + 's';
+    const m = Math.floor(s / 60);
+    const rem = s % 60;
+    return m + 'm ' + rem + 's';
+  }
+
+  async function fetchAnalytics(days) {
+    const pwd = sessionStorage.getItem(PWD_KEY) || '';
+    const res = await fetch('/api/analytics?days=' + days, {
+      headers: pwd ? { 'x-analytics-password': pwd } : {}
+    });
+    if (res.status === 401) {
+      sessionStorage.removeItem(PWD_KEY);
+      throw new Error('unauthorized');
+    }
+    if (!res.ok) throw new Error('Failed: ' + res.status);
+    return res.json();
+  }
+
+  function drawChart(perDay) {
+    const svg = $('chart');
+    svg.innerHTML = '';
+    if (!perDay || !perDay.length) {
+      svg.innerHTML = '<text x="400" y="110" text-anchor="middle">No data yet</text>';
+      return;
+    }
+    const W = 800, H = 220, padL = 40, padR = 16, padT = 16, padB = 28;
+    const maxV = Math.max(1, ...perDay.map(d => Number(d.views)));
+    const xStep = (W - padL - padR) / Math.max(1, perDay.length - 1);
+
+    // Grid lines
+    let gridHtml = '';
+    for (let i = 0; i <= 4; i++) {
+      const y = padT + ((H - padT - padB) * i) / 4;
+      const v = Math.round(maxV - (maxV * i) / 4);
+      gridHtml += `<line class="grid" x1="${padL}" y1="${y}" x2="${W-padR}" y2="${y}"/>`;
+      gridHtml += `<text x="${padL-6}" y="${y+4}" text-anchor="end">${v}</text>`;
+    }
+
+    // Path
+    let path = '';
+    let area = '';
+    perDay.forEach((d, i) => {
+      const x = padL + i * xStep;
+      const y = padT + (H - padT - padB) * (1 - Number(d.views) / maxV);
+      path += (i === 0 ? 'M' : 'L') + x.toFixed(1) + ',' + y.toFixed(1) + ' ';
+      area += (i === 0 ? 'M' : 'L') + x.toFixed(1) + ',' + y.toFixed(1) + ' ';
+    });
+    if (perDay.length) {
+      const lastX = padL + (perDay.length - 1) * xStep;
+      area += 'L' + lastX.toFixed(1) + ',' + (H - padB) + ' L' + padL + ',' + (H - padB) + ' Z';
+    }
+
+    // Date labels (first, middle, last)
+    const labels = [];
+    const indices = perDay.length <= 3 ? perDay.map((_, i) => i) : [0, Math.floor(perDay.length/2), perDay.length-1];
+    indices.forEach(i => {
+      const d = new Date(perDay[i].day);
+      const x = padL + i * xStep;
+      const lab = d.toLocaleDateString(undefined, { month: 'short', day: 'numeric' });
+      labels.push(`<text x="${x}" y="${H-8}" text-anchor="middle">${lab}</text>`);
+    });
+
+    // Dots
+    let dots = '';
+    perDay.forEach((d, i) => {
+      const x = padL + i * xStep;
+      const y = padT + (H - padT - padB) * (1 - Number(d.views) / maxV);
+      dots += `<circle class="dot" cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="3"><title>${new Date(d.day).toLocaleDateString()}: ${d.views} views, ${d.visitors} visitors</title></circle>`;
+    });
+
+    svg.innerHTML = gridHtml +
+      `<path class="area" d="${area}"/>` +
+      `<path class="line" d="${path}"/>` +
+      dots + labels.join('');
+  }
+
+  function renderTable(tbodyId, rows, mapFn, emptyMsg) {
+    const tbody = $(tbodyId);
+    if (!rows || !rows.length) {
+      const cols = tbody.parentElement.querySelectorAll('thead th').length || 2;
+      tbody.innerHTML = `<tr><td colspan="${cols}" class="empty">${emptyMsg || 'No data yet'}</td></tr>`;
+      return;
+    }
+    tbody.innerHTML = rows.map(mapFn).join('');
+  }
+
+  function shareCell(views, total) {
+    const pct = total ? Math.round((views / total) * 100) : 0;
+    return `${pct}%<span class="bar"><i style="width:${pct}%"></i></span>`;
+  }
+
+  function render(data) {
+    const totals = data.totals || {};
+    $('s-views').textContent = fmt(totals.page_views);
+    $('s-visitors').textContent = fmt(totals.unique_visitors);
+    $('s-sessions').textContent = fmt(totals.sessions);
+    const vpv = totals.unique_visitors ? (totals.page_views / totals.unique_visitors).toFixed(1) : '—';
+    $('s-vpv').textContent = vpv;
+
+    drawChart(data.perDay);
+
+    renderTable('t-pages', data.topPages, r => `
+      <tr>
+        <td><div class="truncate" title="${escapeHtml(r.path)}">${escapeHtml(r.path)}</div></td>
+        <td class="num">${fmt(r.views)}</td>
+        <td class="num">${fmt(r.visitors)}</td>
+      </tr>`);
+
+    renderTable('t-refs', data.topReferrers, r => `
+      <tr>
+        <td><div class="truncate" title="${escapeHtml(r.source)}">${escapeHtml(r.source)}</div></td>
+        <td class="num">${fmt(r.views)}</td>
+      </tr>`);
+
+    renderTable('t-countries', data.topCountries, r => `
+      <tr>
+        <td>${escapeHtml(r.country)} ${r.country_code ? `<span class="pill">${escapeHtml(r.country_code)}</span>` : ''}</td>
+        <td class="num">${fmt(r.views)}</td>
+        <td class="num">${fmt(r.visitors)}</td>
+      </tr>`);
+
+    renderTable('t-cities', data.topCities, r => `
+      <tr>
+        <td>${escapeHtml(r.city)}<span class="recent-meta"> ${escapeHtml(r.region || '')}${r.region && r.country ? ', ' : ''}${escapeHtml(r.country || '')}</span></td>
+        <td class="num">${fmt(r.views)}</td>
+      </tr>`);
+
+    const totalDevice = (data.devices || []).reduce((s, r) => s + Number(r.views), 0);
+    renderTable('t-devices', data.devices, r => `
+      <tr>
+        <td>${escapeHtml(r.device)}</td>
+        <td class="num">${fmt(r.views)}</td>
+        <td>${shareCell(Number(r.views), totalDevice)}</td>
+      </tr>`);
+
+    const totalBrowser = (data.browsers || []).reduce((s, r) => s + Number(r.views), 0);
+    renderTable('t-browsers', data.browsers, r => `
+      <tr>
+        <td>${escapeHtml(r.browser)}</td>
+        <td class="num">${fmt(r.views)}</td>
+        <td>${shareCell(Number(r.views), totalBrowser)}</td>
+      </tr>`);
+
+    renderTable('t-sessions', data.sessions, r => {
+      const dur = new Date(r.ended_at).getTime() - new Date(r.started_at).getTime();
+      const where = [r.city, r.country].filter(Boolean).join(', ') || '—';
+      const dev = [r.device, r.browser].filter(Boolean).join(' / ') || '—';
+      return `
+        <tr>
+          <td>${new Date(r.started_at).toLocaleString()}<div class="recent-meta">${relTime(r.started_at)}</div></td>
+          <td>${escapeHtml(where)}</td>
+          <td>${escapeHtml(dev)}</td>
+          <td class="num">${fmt(r.pageviews)}</td>
+          <td>${formatDuration(dur)}</td>
+        </tr>`;
+    });
+
+    const recent = $('t-recent');
+    if (!data.recent || !data.recent.length) {
+      recent.innerHTML = '<div class="empty">No activity yet — visit a page in another tab to see it appear.</div>';
+    } else {
+      recent.innerHTML = data.recent.map(r => {
+        const where = [r.city, r.country_name].filter(Boolean).join(', ');
+        const dev = [r.device, r.browser].filter(Boolean).join(' · ');
+        const ref = r.referrer ? ` from ${escapeHtml(r.referrer)}` : '';
+        return `<div class="recent-row">
+          <div>
+            <div class="recent-path">${escapeHtml(r.path)}</div>
+            <div class="recent-meta">${escapeHtml(where || 'Unknown location')}${dev ? ' · ' + escapeHtml(dev) : ''}${ref}</div>
+          </div>
+          <div class="recent-time">${relTime(r.occurred_at)}</div>
+        </div>`;
+      }).join('');
+    }
+  }
+
+  async function load() {
+    $('loading').hidden = false;
+    $('dashboard').hidden = true;
+    try {
+      const days = $('range').value;
+      const data = await fetchAnalytics(days);
+      $('loading').hidden = true;
+      $('dashboard').hidden = false;
+      $('controls').hidden = false;
+      render(data);
+    } catch (err) {
+      if (err.message === 'unauthorized') {
+        showLogin();
+      } else {
+        $('loading').textContent = 'Failed to load analytics: ' + err.message;
+      }
+    }
+  }
+
+  function showLogin() {
+    $('loading').hidden = true;
+    $('dashboard').hidden = true;
+    $('controls').hidden = true;
+    $('login').hidden = false;
+    setTimeout(() => $('pwd').focus(), 50);
+  }
+
+  $('login-btn').addEventListener('click', () => {
+    const v = $('pwd').value.trim();
+    if (!v) return;
+    sessionStorage.setItem(PWD_KEY, v);
+    $('login-error').hidden = true;
+    $('login').hidden = true;
+    $('loading').hidden = false;
+    load().catch(() => {
+      $('login-error').hidden = false;
+      showLogin();
+    });
+  });
+  $('pwd').addEventListener('keydown', (e) => { if (e.key === 'Enter') $('login-btn').click(); });
+  $('range').addEventListener('change', load);
+  $('refresh').addEventListener('click', load);
+
+  load();
+})();
+</script>
+
+</body>
+</html>

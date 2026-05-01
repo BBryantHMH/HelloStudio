@@ -1,0 +1,11 @@
+{
+  "name": "hello-studio",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Hello Studio — business coaching site with built-in analytics",
+  "type": "module",
+  "dependencies": {
+    "@netlify/database": "^0.1.0",
+    "@netlify/functions": "^4.0.0"
+  }
+}
