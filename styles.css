@@ -186,6 +186,12 @@ ul.clean { list-style: none; padding: 0; }
 .bg-pine a:not(.btn) { color: var(--gold-soft); }
 .bg-pine .lead { color: rgba(251, 245, 233, 0.85); }
 .bg-pine .check-list li { color: rgba(251, 245, 233, 0.92); }
+/* Cards inside dark sections need their own dark text since the section's cream cascade leaks in */
+.bg-pine .card,
+.bg-pine .card p,
+.bg-pine .card li { color: var(--pine); }
+.bg-pine .card h3,
+.bg-pine .card h4 { color: var(--pine-deep); }
 
 .bg-teal        { background: var(--teal); color: var(--cream); }
 .bg-teal h1, .bg-teal h2, .bg-teal h3, .bg-teal h4 { color: var(--cream); }
