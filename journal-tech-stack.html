@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO -->
+  <title>The Tech Stack That Actually Runs a Group Practice | Hello Studio</title>
+  <meta name="description" content="The exact tech stack behind a working group therapy practice — EHR, payroll, CRM, analytics, and AI. What to set up first, what we ditched, and the one tool most owners sleep on. By Dr. Bailey Bryant.">
+  <meta name="keywords" content="group practice tech stack, therapy practice software, Simple Practice EHR, Therapy Flow CRM, Practice Vital, Gusto payroll, group practice tools, therapy practice systems">
+  <meta name="author" content="Dr. Bailey Bryant">
+  <link rel="canonical" href="https://hellostudio.online/journal-tech-stack.html">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="The Tech Stack That Actually Runs a Group Practice">
+  <meta property="og:description" content="The exact tools behind a working group therapy practice — EHR, payroll, CRM, analytics, and AI. What to set up first, what we ditched.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://hellostudio.online/journal-tech-stack.html">
+  <meta property="og:image" content="https://hellostudio.online/assets/photos/journal/tech-stack-hero.jpg">
+  <meta property="og:site_name" content="Hello Studio">
+  <meta property="article:published_time" content="2026-05-03">
+  <meta property="article:author" content="Dr. Bailey Bryant">
+  <meta property="article:section" content="Systems">
+  <meta property="article:tag" content="Systems">
+  <meta property="article:tag" content="Tech Stack">
+  <meta property="article:tag" content="Group Practice">
+  <meta property="article:tag" content="Practice Software">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="The Tech Stack That Actually Runs a Group Practice">
+  <meta name="twitter:description" content="EHR, payroll, CRM, analytics, AI — the exact tools behind a working group therapy practice, and what to set up first.">
+  <meta name="twitter:image" content="https://hellostudio.online/assets/photos/journal/tech-stack-hero.jpg">
+
+  <!-- JSON-LD: Article schema for Google + AI summarizers -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "The Tech Stack That Actually Runs a Group Practice",
+    "description": "The exact tech stack behind a working group therapy practice — EHR, payroll, CRM, analytics, and AI. What to set up first, what we ditched, and the one tool most owners sleep on.",
+    "image": "https://hellostudio.online/assets/photos/journal/tech-stack-hero.jpg",
+    "datePublished": "2026-05-03",
+    "dateModified": "2026-05-03",
+    "author": {
+      "@type": "Person",
+      "name": "Dr. Bailey Bryant",
+      "url": "https://hellostudio.online/about.html",
+      "jobTitle": "Psychologist & Group Practice Owner",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Hello Mental Health"
+      }
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Hello Studio",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://hellostudio.online/assets/logo/logo-mark.png"
+      }
+    },
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://hellostudio.online/journal-tech-stack.html"
+    },
+    "articleSection": "Systems",
+    "keywords": "group practice tech stack, Simple Practice, Therapy Flow CRM, Practice Vital, Gusto payroll, Slack, Google Workspace, Claude AI",
+    "wordCount": 1100,
+    "timeRequired": "PT9M",
+    "mentions": [
+      {"@type": "SoftwareApplication", "name": "Simple Practice", "applicationCategory": "Healthcare EHR"},
+      {"@type": "SoftwareApplication", "name": "Google Workspace", "applicationCategory": "Productivity"},
+      {"@type": "SoftwareApplication", "name": "Slack", "applicationCategory": "Communication"},
+      {"@type": "SoftwareApplication", "name": "Gusto", "applicationCategory": "Payroll"},
+      {"@type": "SoftwareApplication", "name": "Therapy Flow", "applicationCategory": "CRM"},
+      {"@type": "SoftwareApplication", "name": "Practice Vital", "applicationCategory": "Analytics"},
+      {"@type": "SoftwareApplication", "name": "Claude", "applicationCategory": "AI Assistant"}
+    ]
+  }
+  </script>
+
+  <!-- JSON-LD: BreadcrumbList -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://hellostudio.online/"},
+      {"@type": "ListItem", "position": 2, "name": "Journal", "item": "https://hellostudio.online/blog.html"},
+      {"@type": "ListItem", "position": 3, "name": "The Tech Stack That Actually Runs a Group Practice", "item": "https://hellostudio.online/journal-tech-stack.html"}
+    ]
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+  <script src="js/thinkific-links.js" defer></script>
+
+  <!-- Article-specific styles (scoped, additive) -->
+  <style>
+    .article-hero {
+      position: relative;
+      padding: clamp(2.5rem, 7vw, 5rem) 0 clamp(2rem, 5vw, 3.5rem);
+      background: var(--cream);
+      overflow: hidden;
+    }
+    .article-hero .container-narrow { position: relative; z-index: 2; }
+    .article-hero .eyebrow-row {
+      display: flex; gap: var(--sp-3); align-items: center; justify-content: center;
+      margin-bottom: var(--sp-5); flex-wrap: wrap;
+    }
+    .article-hero h1 {
+      font-size: clamp(2.2rem, 5vw, 3.6rem);
+      text-align: center;
+      max-width: 800px;
+      margin: 0 auto var(--sp-5);
+    }
+    .article-hero .lead { text-align: center; max-width: 720px; margin: 0 auto var(--sp-6); }
+    .article-byline {
+      display: flex; gap: var(--sp-3); align-items: center; justify-content: center;
+      color: var(--muted); font-size: 0.88rem; text-transform: uppercase;
+      letter-spacing: 0.08em; font-weight: 600; flex-wrap: wrap;
+    }
+    .article-byline .dot { color: var(--gold); }
+
+    .hero-image-wrap {
+      max-width: 1080px; margin: 0 auto; padding: 0 var(--sp-6);
+      margin-top: var(--sp-7);
+    }
+    .hero-image {
+      width: 100%; aspect-ratio: 16 / 9; overflow: hidden;
+      border-radius: var(--r-lg); box-shadow: var(--shadow-lg);
+      background: linear-gradient(135deg, rgba(30,98,86,0.08), rgba(227,184,77,0.10));
+    }
+    .hero-image img { width: 100%; height: 100%; object-fit: cover; display: block; }
+
+    .article-body { padding: var(--sp-8) 0 var(--sp-9); }
+    .article-body .container-narrow { max-width: 720px; }
+    .article-body p {
+      font-size: 1.12rem; line-height: 1.75; color: var(--ink-soft);
+      margin: 0 0 var(--sp-5);
+    }
+    .article-body h2 {
+      font-size: clamp(1.6rem, 3vw, 2.2rem);
+      margin: var(--sp-8) 0 var(--sp-4);
+      color: var(--pine-deep);
+    }
+    .article-body h2:first-of-type { margin-top: var(--sp-4); }
+    .article-body h3 {
+      font-size: 1.25rem; margin: var(--sp-6) 0 var(--sp-3);
+      color: var(--pine-deep);
+      font-family: var(--font-sans);
+      font-weight: 700;
+      letter-spacing: -0.005em;
+    }
+    .article-body strong { color: var(--pine-deep); font-weight: 600; }
+    .article-body a:not(.btn) {
+      color: var(--gold-warm); border-bottom: 1px solid rgba(184,130,25,0.35);
+    }
+    .article-body a:not(.btn):hover { border-color: var(--gold-warm); }
+
+    .pull-quote {
+      font-family: var(--font-display);
+      font-style: italic;
+      font-size: clamp(1.5rem, 2.6vw, 2rem);
+      line-height: 1.35;
+      color: var(--pine-deep);
+      border-left: 4px solid var(--gold);
+      padding: var(--sp-3) 0 var(--sp-3) var(--sp-5);
+      margin: var(--sp-7) 0;
+    }
+
+    .inline-image {
+      margin: var(--sp-7) calc(-1 * var(--sp-5));
+      border-radius: var(--r-md);
+      overflow: hidden;
+      box-shadow: var(--shadow-md);
+      aspect-ratio: 16 / 9;
+      background: linear-gradient(135deg, rgba(30,98,86,0.06), rgba(227,184,77,0.08));
+    }
+    .inline-image img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    @media (max-width: 720px) {
+      .inline-image { margin-left: 0; margin-right: 0; }
+    }
+
+    /* Tool stack grid — visual representation of the foundational three */
+    .tool-stack-grid {
+      display: grid;
+      gap: var(--sp-4);
+      margin: var(--sp-6) 0;
+    }
+    @media (min-width: 600px) {
+      .tool-stack-grid { grid-template-columns: repeat(3, 1fr); }
+    }
+    .tool-card {
+      background: var(--cream-deep);
+      border-radius: var(--r-md);
+      padding: var(--sp-5);
+      border-top: 3px solid var(--gold);
+    }
+    .tool-card h4 {
+      margin: 0 0 var(--sp-2);
+      font-family: var(--font-display);
+      font-size: 1.15rem;
+      color: var(--pine-deep);
+      font-weight: 500;
+    }
+    .tool-card p {
+      margin: 0;
+      font-size: 0.95rem;
+      line-height: 1.5;
+      color: var(--ink-soft);
+    }
+    .tool-card .tool-role {
+      display: block;
+      font-size: 0.72rem;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--gold-warm);
+      font-weight: 700;
+      font-family: var(--font-sans);
+      margin-bottom: var(--sp-2);
+    }
+
+    .key-takeaways {
+      background: var(--cream-deep);
+      border-radius: var(--r-md);
+      padding: var(--sp-6);
+      margin: var(--sp-7) 0;
+      border-left: 4px solid var(--teal);
+    }
+    .key-takeaways h3 {
+      margin-top: 0;
+      font-family: var(--font-sans);
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      color: var(--teal);
+      font-weight: 700;
+    }
+    .key-takeaways ul {
+      margin: 0; padding-left: 1.2rem;
+    }
+    .key-takeaways li {
+      margin-bottom: var(--sp-3);
+      color: var(--ink-soft);
+      line-height: 1.55;
+    }
+
+    .author-card {
+      display: flex; gap: var(--sp-5); align-items: center;
+      padding: var(--sp-6); margin: var(--sp-8) 0 var(--sp-6);
+      background: var(--cream-deep); border-radius: var(--r-md);
+    }
+    .author-card .avatar {
+      width: 84px; height: 84px; border-radius: 50%; overflow: hidden;
+      flex-shrink: 0; background: var(--cream);
+    }
+    .author-card .avatar img { width: 100%; height: 100%; object-fit: cover; }
+    .author-card .meta p { margin: 0; font-size: 1rem; line-height: 1.5; }
+    .author-card .meta .name {
+      font-family: var(--font-display); font-size: 1.3rem; color: var(--pine-deep);
+      margin-bottom: 4px;
+    }
+    .author-card .meta .role {
+      color: var(--muted); font-size: 0.88rem;
+      text-transform: uppercase; letter-spacing: 0.08em; font-weight: 600;
+    }
+    @media (max-width: 600px) {
+      .author-card { flex-direction: column; text-align: center; }
+    }
+
+    .post-cta-block {
+      background: var(--pine);
+      color: var(--cream);
+      padding: var(--sp-7);
+      border-radius: var(--r-lg);
+      text-align: center;
+      margin: var(--sp-7) 0 var(--sp-5);
+    }
+    .post-cta-block h3 {
+      color: var(--cream);
+      font-size: 1.6rem;
+      margin-bottom: var(--sp-3);
+      font-family: var(--font-display);
+      font-style: italic;
+      font-weight: 400;
+    }
+    .post-cta-block p {
+      color: rgba(251,245,233,0.85);
+      max-width: 480px;
+      margin: 0 auto var(--sp-5);
+      font-size: 1.02rem;
+    }
+  </style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="brand" aria-label="Hello Studio — home"><img src="assets/logo/logo-mark.png" alt="" class="brand-logo" onerror="this.remove(); document.querySelector('.brand-text').style.display='inline';"><span class="brand-text">Hello <em>Studio</em></span></a>
+    <nav aria-label="Primary">
+      <ul class="nav-links">
+        <li><a href="about.html">About</a></li>
+        <li><a href="coaching.html">1:1 Coaching</a></li>
+        <li><a href="vault.html">The Vault</a></li>
+        <li><a href="blog.html" aria-current="page">Journal</a></li>
+      </ul>
+    </nav>
+    <a href="coaching.html#apply" class="btn btn-gold btn-small nav-cta">Work with us <span class="arr">→</span></a>
+    <button class="nav-toggle" aria-label="Toggle menu" onclick="document.querySelector('.mobile-drawer').classList.toggle('is-open')">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+  </div>
+  <div class="mobile-drawer">
+    <ul>
+      <li><a href="about.html">About</a></li>
+      <li><a href="coaching.html">1:1 Coaching</a></li>
+      <li><a href="vault.html">The Vault</a></li>
+      <li><a href="blog.html">Journal</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+</header>
+
+<article itemscope itemtype="https://schema.org/Article">
+
+  <!-- ARTICLE HERO -->
+  <section class="article-hero">
+    <div class="container-narrow">
+      <div class="eyebrow-row">
+        <a href="blog.html" style="color: var(--muted); font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.18em; font-weight: 600; border-bottom: none;">← The Journal</a>
+        <span style="color: var(--gold);">·</span>
+        <span class="eyebrow">Systems</span>
+      </div>
+      <h1 itemprop="headline">The Tech Stack That <em class="serif-accent">Actually</em> Runs a Group Practice</h1>
+      <p class="lead" itemprop="description">The exact tools running our group therapy practice — what to set up first, what rounds out the stack, what we ditched, and the one tool most owners sleep on.</p>
+      <div class="article-byline">
+        <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="name">Bailey Bryant</span></span>
+        <span class="dot">·</span>
+        <span>9 min read</span>
+        <span class="dot">·</span>
+        <time datetime="2026-05-03" itemprop="datePublished">May 2026</time>
+      </div>
+    </div>
+    <div class="hero-image-wrap">
+      <div class="hero-image">
+        <img src="assets/photos/journal/tech-stack-hero.jpg"
+             alt="A clean desk with a laptop, notebook, and coffee — the workstation behind a group therapy practice running on a deliberate set of digital tools."
+             itemprop="image"
+             onerror="this.parentElement.innerHTML='&lt;div style=&quot;width:100%;height:100%;display:flex;align-items:center;justify-content:center;text-align:center;color:var(--muted);font-style:italic;padding:0 var(--sp-5);background:linear-gradient(135deg,rgba(30,98,86,0.08),rgba(227,184,77,0.10));&quot;&gt;Hero image placeholder&lt;br&gt;&lt;span style=&quot;font-size:0.75rem;&quot;&gt;assets/photos/journal/tech-stack-hero.jpg&lt;/span&gt;&lt;/div&gt;';">
+      </div>
+    </div>
+  </section>
+
+  <!-- ARTICLE BODY -->
+  <section class="article-body bg-cream">
+    <div class="container-narrow">
+      <div itemprop="articleBody">
+
+        <p>At some point in every group practice owner's journey, someone asks: <em>what tools are you using?</em></p>
+
+        <p>It's one of my favorite questions to answer — not because I want to sell you on any particular product, but because the tools you choose early shape everything downstream. Your onboarding process. Your reporting. Your ability to hand things off without things breaking. The difference between a practice that runs on systems and one that runs on you personally.</p>
+
+        <p>Here's what actually runs ours — and what I'd tell you to set up first if you're just getting started.</p>
+
+        <h2>Start here. Before anything else.</h2>
+
+        <p>If you're building a group practice from scratch, three tools go in before everything else:</p>
+
+        <div class="tool-stack-grid">
+          <div class="tool-card">
+            <span class="tool-role">EHR</span>
+            <h4>Simple Practice</h4>
+            <p>The spine of the clinical operation — scheduling, notes, billing, client records.</p>
+          </div>
+          <div class="tool-card">
+            <span class="tool-role">Workspace</span>
+            <h4>Google Workspace</h4>
+            <p>Email, shared drives, documents, the company intranet. Your organizational backbone.</p>
+          </div>
+          <div class="tool-card">
+            <span class="tool-role">Comms</span>
+            <h4>Slack</h4>
+            <p>Internal communication that isn't email and isn't text. Where the day-to-day actually happens.</p>
+          </div>
+        </div>
+
+        <h3>Your EHR</h3>
+        <p>For us, that's <strong>Simple Practice</strong>. It's the spine of the clinical operation — scheduling, notes, billing, client records. Everything else connects to it or works around it. Don't wait until you have staff to get this right. Get it right first, then bring people into a system that already works.</p>
+
+        <h3>Google Workspace</h3>
+        <p>Email, shared drives, documents, your company intranet — all of it lives here. When you hire your first person, you create them a company email in minutes and they're immediately inside your ecosystem. It's also where your employee manual lives, your shared templates, your meeting agendas. The organizational backbone that has nothing to do with clinical work but makes everything work.</p>
+
+        <h3>Slack</h3>
+        <p>Internal communication that isn't email and isn't text. This is where the day-to-day actually happens — quick questions, team updates, async check-ins. The moment you have more than one person in your practice, you need a dedicated channel for internal communication that keeps it out of your inbox. Slack is ours.</p>
+
+        <p>Set those three up. Get comfortable in them. Then build outward.</p>
+
+        <figure class="inline-image">
+          <img src="assets/photos/journal/tech-stack-foundation.jpg"
+               alt="A laptop with a calendar and scheduling app open on screen — the foundational EHR layer that anchors a group practice's daily operations."
+               onerror="this.parentElement.innerHTML='&lt;div style=&quot;width:100%;height:100%;display:flex;align-items:center;justify-content:center;text-align:center;color:var(--muted);font-style:italic;padding:0 var(--sp-5);background:linear-gradient(135deg,rgba(30,98,86,0.06),rgba(227,184,77,0.08));&quot;&gt;Image placeholder&lt;br&gt;&lt;span style=&quot;font-size:0.75rem;&quot;&gt;assets/photos/journal/tech-stack-foundation.jpg&lt;/span&gt;&lt;/div&gt;';">
+        </figure>
+
+        <h2>The full stack.</h2>
+
+        <p>Once the foundation is in place, here's what rounds out our current setup:</p>
+
+        <h3>Gusto</h3>
+        <p><strong>Gusto</strong> handles payroll. It's straightforward, it integrates well, and it takes something genuinely complicated and makes it manageable. For any practice running W2 employees or 1099 contractors, you need real payroll software — not a spreadsheet, not a workaround. Gusto is the one I recommend most often.</p>
+
+        <h3>Therapy Flow</h3>
+        <p><strong>Therapy Flow</strong> is our CRM — and I'll say more about this in a minute because it deserves its own section.</p>
+
+        <h3>Practice Vital</h3>
+        <p><strong>Practice Vital</strong> is our analytics dashboard. It pulls data from Simple Practice and visualizes it in ways that actually inform decisions — caseload by clinician, retention rates, session counts, revenue trends. If you're serious about running a data-informed practice, you need somewhere to see the data clearly. Practice Vital does that for us.</p>
+
+        <h3>Claude</h3>
+        <p><strong>Claude</strong> is our AI layer. I use it constantly — for drafting, for thinking through problems, for synthesizing information, for building out systems and processes faster than I could alone. I'm also watching the space closely for therapist-developed AI tools designed for client-facing support between sessions. That category is still early but it's coming fast, and it's going to change the way we think about continuity of care.</p>
+
+        <h2>The tool most practice owners sleep on.</h2>
+
+        <p>The CRM. By a significant margin.</p>
+
+        <p>I get it — it's the most intimidating thing on this list. Setting up a CRM well is genuinely complicated. It takes time, it requires you to think carefully about your intake workflow, and it won't do much for you if you rush it.</p>
+
+        <p>But once it's working? It is a completely different practice.</p>
+
+        <p><strong>Therapy Flow</strong> — the one we use, built specifically for therapy practices — handles lead tracking, automated client touches, intake workflow, email marketing, and reporting in one place. When a new inquiry comes in, the system captures it. When a lead goes quiet, the system follows up. When you want to know where your referrals are coming from this quarter, you pull a report instead of digging through your memory.</p>
+
+        <p>Before a CRM, we were doing most of this manually or not at all. After, we had visibility into our pipeline that we simply didn't have before.</p>
+
+        <blockquote class="pull-quote">
+          The setup investment is real. Do it anyway.
+        </blockquote>
+
+        <figure class="inline-image">
+          <img src="assets/photos/journal/tech-stack-crm.jpg"
+               alt="A person reviewing analytics and pipeline data on a screen — the kind of visibility a CRM gives a group practice that's been running on memory and spreadsheets."
+               onerror="this.parentElement.innerHTML='&lt;div style=&quot;width:100%;height:100%;display:flex;align-items:center;justify-content:center;text-align:center;color:var(--muted);font-style:italic;padding:0 var(--sp-5);background:linear-gradient(135deg,rgba(30,98,86,0.06),rgba(227,184,77,0.08));&quot;&gt;Image placeholder&lt;br&gt;&lt;span style=&quot;font-size:0.75rem;&quot;&gt;assets/photos/journal/tech-stack-crm.jpg&lt;/span&gt;&lt;/div&gt;';">
+        </figure>
+
+        <h2>What we ditched.</h2>
+
+        <p>Mostly marketing tools — social media schedulers, email marketing platforms. Not because any of them were bad, but because once we had Therapy Flow, a lot of that functionality lived in one place instead of scattered across three tabs. Consolidation is its own form of efficiency.</p>
+
+        <p>My general rule now: <strong>if a tool isn't deeply integrated into how we work, it becomes something to maintain rather than something that helps</strong>. I'd rather have six tools I use every day than twelve tools I check occasionally.</p>
+
+        <h2>How the stack gets stress-tested: onboarding.</h2>
+
+        <p>One of the clearest signals that your tech stack is working — or isn't — is what happens when you bring on a new clinician.</p>
+
+        <p>Our onboarding checklist runs across four areas:</p>
+
+        <div class="key-takeaways">
+          <h3>The Four Onboarding Domains</h3>
+          <ul>
+            <li><strong>HR and compliance</strong> — contracts, background checks, payroll setup, HIPAA training, NPI.</li>
+            <li><strong>Marketing</strong> — intro content, directory profiles, headshots, networking introductions.</li>
+            <li><strong>Systems orientation</strong> — Slack, Google Workspace, building access, email setup, handbook review.</li>
+            <li><strong>Simple Practice training</strong> — demo mode walkthrough, intake documents, scheduling, note templates.</li>
+          </ul>
+        </div>
+
+        <p>Each item has an owner. Each owner knows what they're responsible for. Nothing lives in someone's head.</p>
+
+        <p>That's only possible because the systems exist first. The checklist documents the systems — it doesn't replace them. <em>If you find yourself onboarding someone and improvising as you go, that's not an onboarding problem. That's a systems problem that onboarding just revealed.</em></p>
+
+        <figure class="inline-image">
+          <img src="assets/photos/journal/tech-stack-onboarding.jpg"
+               alt="A notebook with a checklist and pen — the kind of structured onboarding documentation that proves a group practice's tech stack is actually integrated."
+               onerror="this.parentElement.innerHTML='&lt;div style=&quot;width:100%;height:100%;display:flex;align-items:center;justify-content:center;text-align:center;color:var(--muted);font-style:italic;padding:0 var(--sp-5);background:linear-gradient(135deg,rgba(30,98,86,0.06),rgba(227,184,77,0.08));&quot;&gt;Image placeholder&lt;br&gt;&lt;span style=&quot;font-size:0.75rem;&quot;&gt;assets/photos/journal/tech-stack-onboarding.jpg&lt;/span&gt;&lt;/div&gt;';">
+        </figure>
+
+        <h2>The honest version of how we got here.</h2>
+
+        <p>We didn't build this stack all at once. We built it through research, word of mouth from other practice owners, and trial and error — in that order. Most of the tools we use now came through recommendations from people who'd already done the work of figuring out what was worth it.</p>
+
+        <p>Which is the main reason I write about this stuff. The learning curve for running a group practice is steep, and a lot of the practical knowledge lives in conversations between owners rather than anywhere it's easy to find.</p>
+
+        <p>If one piece of this stack saves you six months of figuring it out yourself, that's the point.</p>
+
+        <!-- AUTHOR CARD -->
+        <aside class="author-card" aria-label="About the author">
+          <div class="avatar">
+            <img src="assets/photos/bailey-portrait.png"
+                 alt="Dr. Bailey Bryant, psychologist and group practice owner"
+                 onerror="this.parentElement.innerHTML='&lt;div style=&quot;width:100%;height:100%;display:flex;align-items:center;justify-content:center;background:var(--cream);color:var(--gold-warm);font-family:var(--font-display);font-size:1.6rem;&quot;&gt;BB&lt;/div&gt;';">
+          </div>
+          <div class="meta">
+            <p class="role">Written by</p>
+            <p class="name">Dr. Bailey Bryant</p>
+            <p style="color: var(--muted); margin-top: 4px;">Psychologist, group practice owner of 10+ years, and founder of Hello Studio. Helping practice owners build businesses that don't quietly burn them out.</p>
+          </div>
+        </aside>
+
+        <!-- CTA -->
+        <div class="post-cta-block">
+          <h3>Want to think through your own stack?</h3>
+          <p>Studio 1:1s are a good place to start — we can look at where you are and what actually makes sense for your size and stage.</p>
+          <a href="coaching.html#apply" class="btn btn-gold">Explore 1:1 Coaching <span class="arr">→</span></a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- RELATED POSTS -->
+  <section class="section bg-cream-deep">
+    <div class="container">
+      <div style="text-align: center; margin-bottom: var(--sp-7);">
+        <p class="eyebrow">Keep Reading</p>
+        <h2>More from <em class="serif-accent">the Journal</em></h2>
+      </div>
+      <div class="grid-3">
+        <article class="post-card">
+          <div class="post-meta"><span>Group Practice</span><span>·</span><span>8 min</span></div>
+          <h3><a href="journal-solo-to-group.html" style="border-bottom:none;color:inherit;">What Nobody Tells You About Going From Solo to Group</a></h3>
+          <p class="post-snippet">Someone told me early on that group practice was passive income. I think about that a lot — usually at 9pm reviewing an employment contract.</p>
+          <a href="journal-solo-to-group.html" class="read-more">Read more →</a>
+        </article>
+        <article class="post-card">
+          <div class="post-meta"><span>Finance</span><span>·</span><span>11 min</span></div>
+          <h3>The Five KPIs I Actually Watch Every Week</h3>
+          <p class="post-snippet">A tour of the dashboard that tells me whether the practice is healthy — and which numbers I've stopped worrying about entirely.</p>
+          <a href="#" class="read-more">Read more →</a>
+        </article>
+        <article class="post-card">
+          <div class="post-meta"><span>Leadership</span><span>·</span><span>6 min</span></div>
+          <h3>When Your Clinician Wants to Leave (And You Know They Should)</h3>
+          <p class="post-snippet">The awkward middle-ground conversation that saves relationships on both sides — and the one mistake I used to make.</p>
+          <a href="#" class="read-more">Read more →</a>
+        </article>
+      </div>
+      <div style="text-align: center; margin-top: var(--sp-7);">
+        <a href="blog.html" class="btn btn-ghost">← Back to all essays</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SUBSCRIBE -->
+  <section class="section bg-pine">
+    <div class="container-narrow text-center" style="text-align: center;">
+      <p class="eyebrow">Studio Dispatch</p>
+      <h2>One thoughtful essay, <em class="serif-accent">every other Friday.</em></h2>
+      <p style="color: rgba(251,245,233,0.8); max-width: 560px; margin: 0 auto var(--sp-5);">No funnel tricks, no "as seen on" brag bar, no seven-email sequence. Just one honest thing about the business of running a practice.</p>
+      <form action="https://formsubmit.co/hello@hellostudio.online" method="POST" style="max-width: 440px; margin: 0 auto; display: flex; gap: 8px; flex-wrap: wrap;" data-email-to="hello@hellostudio.online" data-subject="Journal Subscribe signup — hellostudio.online" data-success-message="&lt;p style=&quot;color:var(--cream);margin:0;&quot;&gt;You're on the list! 💌&lt;/p&gt;">
+        <input type="email" name="email" placeholder="you@yourpractice.com" required style="flex:1; padding: 14px 18px; border: 0; border-radius: var(--r-pill); font-family: var(--font-sans); font-size: 1rem;">
+        <button type="submit" class="btn btn-gold">Subscribe</button>
+      </form>
+    </div>
+  </section>
+
+</article>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <img class="footer-logo" src="assets/logo/logo-mark.png" alt="Hello Studio">
+        <p style="color: rgba(251,245,233,0.7); max-width: 320px;">Tools and conversations that move you forward. A sister company to Hello Mental Health.</p>
+      </div>
+      <div>
+        <h4>Studio</h4>
+        <ul>
+          <li><a href="coaching.html">1:1 Coaching</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Resources</h4>
+        <ul>
+          <li><a href="vault.html">The Vault</a></li>
+          <li><a href="blog.html">Journal</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Visit</h4>
+        <ul>
+          <li>126 Wellington Place<br>Cincinnati, OH 45219</li>
+          <li><a href="https://hellomentalhealth.com">hellomentalhealth.com ↗</a></li>
+          <li><a href="https://www.instagram.com/hello.mentalhealth/">Instagram ↗</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Hello Studio. All rights reserved.</span>
+      <span>Powered by coffee, community, and creative brains everywhere.</span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
