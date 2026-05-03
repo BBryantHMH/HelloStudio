@@ -72,3 +72,75 @@
     init();
   }
 })();
+
+/* Hello Studio — Journal tag filter
+ * Wires up the .tag-row chips on blog.html to filter .post-card[data-tags] items.
+ * Add data-tags="Group Practice,Systems" to any post card to make it filterable.
+ */
+(function () {
+  'use strict';
+
+  function initBlogFilter() {
+    const tagRow = document.querySelector('.tag-row');
+    if (!tagRow) return;
+
+    const tags = tagRow.querySelectorAll('.tag');
+    const cards = document.querySelectorAll('.post-card[data-tags]');
+    if (cards.length === 0 || tags.length === 0) return;
+
+    // Find the parent grid that holds the cards (for the empty-state message)
+    const grid = cards[0].parentElement;
+    let emptyMsg = null;
+
+    function ensureEmptyMsg() {
+      if (!emptyMsg) {
+        emptyMsg = document.createElement('div');
+        emptyMsg.style.cssText = 'grid-column: 1 / -1; text-align: center; padding: 3rem 1rem; color: var(--muted); font-style: italic; font-family: var(--font-display); font-size: 1.05rem;';
+        emptyMsg.innerHTML = 'No essays in this category yet. <a href="#" class="show-all" style="color: var(--gold-warm); border-bottom: 1px solid rgba(184,130,25,0.4);">Show all essays</a>';
+        grid.appendChild(emptyMsg);
+        const showAll = emptyMsg.querySelector('.show-all');
+        showAll.addEventListener('click', function (e) {
+          e.preventDefault();
+          const allTag = tagRow.querySelector('.tag');
+          if (allTag) allTag.click();
+        });
+      }
+      return emptyMsg;
+    }
+
+    function filterPosts(tagName) {
+      let visible = 0;
+      cards.forEach(function (card) {
+        const cardTags = (card.getAttribute('data-tags') || '')
+          .split(',')
+          .map(function (t) { return t.trim(); });
+        if (tagName === 'All' || cardTags.indexOf(tagName) !== -1) {
+          card.style.display = '';
+          visible++;
+        } else {
+          card.style.display = 'none';
+        }
+      });
+      if (visible === 0) {
+        ensureEmptyMsg().style.display = '';
+      } else if (emptyMsg) {
+        emptyMsg.style.display = 'none';
+      }
+    }
+
+    tags.forEach(function (tag) {
+      tag.addEventListener('click', function (e) {
+        e.preventDefault();
+        tags.forEach(function (t) { t.classList.remove('is-active'); });
+        this.classList.add('is-active');
+        filterPosts(this.textContent.trim());
+      });
+    });
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initBlogFilter);
+  } else {
+    initBlogFilter();
+  }
+})();
