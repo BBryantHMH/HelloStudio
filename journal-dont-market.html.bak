@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO -->
+  <title>Don't Market Before You're Ready | Hello Studio</title>
+  <meta name="description" content="Why marketing before your brand and website are ready costs more than money — it costs you the clients who were already looking for you. By Dr. Bailey Bryant.">
+  <meta name="keywords" content="therapy practice marketing, when to market practice, group practice branding, therapy website conversion, practice marketing readiness, brand before marketing, therapy practice growth">
+  <meta name="author" content="Dr. Bailey Bryant">
+  <link rel="canonical" href="https://hellostudio.online/journal-dont-market.html">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Don't Market Before You're Ready">
+  <meta property="og:description" content="The real risk of marketing too early isn't wasted money — it's losing the clients who were already looking for you.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://hellostudio.online/journal-dont-market.html">
+  <meta property="og:image" content="https://hellostudio.online/assets/photos/journal/dont-market-hero.jpg">
+  <meta property="og:site_name" content="Hello Studio">
+  <meta property="article:published_time" content="2026-05-03">
+  <meta property="article:author" content="Dr. Bailey Bryant">
+  <meta property="article:section" content="Group Practice">
+  <meta property="article:tag" content="Marketing">
+  <meta property="article:tag" content="Branding">
+  <meta property="article:tag" content="Group Practice">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Don't Market Before You're Ready">
+  <meta name="twitter:description" content="The real risk of marketing too early isn't wasted money — it's losing the clients who were already looking for you.">
+  <meta name="twitter:image" content="https://hellostudio.online/assets/photos/journal/dont-market-hero.jpg">
+
+  <!-- JSON-LD: Article schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Don't Market Before You're Ready",
+    "description": "Why marketing before your brand and website are ready costs more than money — it costs you the clients who were already looking for you.",
+    "image": "https://hellostudio.online/assets/photos/journal/dont-market-hero.jpg",
+    "datePublished": "2026-05-03",
+    "dateModified": "2026-05-03",
+    "author": {
+      "@type": "Person",
+      "name": "Dr. Bailey Bryant",
+      "url": "https://hellostudio.online/about.html",
+      "jobTitle": "Psychologist & Group Practice Owner",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Hello Mental Health"
+      }
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Hello Studio",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://hellostudio.online/assets/logo/logo-mark.png"
+      }
+    },
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://hellostudio.online/journal-dont-market.html"
+    },
+    "articleSection": "Group Practice",
+    "keywords": "therapy practice marketing, brand before marketing, website conversion, marketing readiness",
+    "wordCount": 1100,
+    "timeRequired": "PT7M"
+  }
+  </script>
+
+  <!-- JSON-LD: BreadcrumbList -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://hellostudio.online/"},
+      {"@type": "ListItem", "position": 2, "name": "Journal", "item": "https://hellostudio.online/blog.html"},
+      {"@type": "ListItem", "position": 3, "name": "Don't Market Before You're Ready", "item": "https://hellostudio.online/journal-dont-market.html"}
+    ]
+  }
+  </script>
+
+  <!-- JSON-LD: FAQ schema (for AI summarizers + Google rich results) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "When should a therapy practice start marketing?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Once your brand is legible, your website is converting visitors into inquiries, and your intake process is functional. The sequence matters: brand first, infrastructure second, marketing third. Marketing amplifies what's already there — if what's there is weak, marketing amplifies the weakness."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What does \"not ready to market\" actually look like?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A website that doesn't clearly communicate who the practice is for, lacks a single obvious next step, or buries the contact process. Or a brand that isn't yet legible — where visitors have to work to understand what you do and why they should trust you."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Should my website be a brochure or a funnel?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A funnel. A brochure gives information; a funnel moves people from \"I found this\" to \"I reached out.\" Every page, section, and piece of copy should be in service of one job: getting your ideal client to make contact."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does my practice website have to be perfect before I market?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. The goal is \"good enough\" — meaning it won't turn off your ideal client. There's a difference between a website that's still evolving and one that actively undermines trust. Aim for the threshold where someone lands on your presence and thinks \"yes, this feels right.\""
+        }
+      }
+    ]
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+  <script src="js/thinkific-links.js" defer></script>
+
+  <!-- Article-specific styles (scoped, additive) -->
+  <style>
+    .article-hero {
+      position: relative;
+      padding: clamp(2.5rem, 7vw, 5rem) 0 clamp(2rem, 5vw, 3.5rem);
+      background: var(--cream);
+      overflow: hidden;
+    }
+    .article-hero .container-narrow { position: relative; z-index: 2; }
+    .article-hero .eyebrow-row {
+      display: flex; gap: var(--sp-3); align-items: center; justify-content: center;
+      margin-bottom: var(--sp-5); flex-wrap: wrap;
+    }
+    .article-hero h1 {
+      font-size: clamp(2.2rem, 5vw, 3.6rem);
+      text-align: center;
+      max-width: 800px;
+      margin: 0 auto var(--sp-5);
+    }
+    .article-hero .lead { text-align: center; max-width: 720px; margin: 0 auto var(--sp-6); }
+    .article-byline {
+      display: flex; gap: var(--sp-3); align-items: center; justify-content: center;
+      color: var(--muted); font-size: 0.88rem; text-transform: uppercase;
+      letter-spacing: 0.08em; font-weight: 600; flex-wrap: wrap;
+    }
+    .article-byline .dot { color: var(--gold); }
+
+    .hero-image-wrap {
+      max-width: 1080px; margin: 0 auto; padding: 0 var(--sp-6);
+      margin-top: var(--sp-7);
+    }
+    .hero-image {
+      width: 100%; aspect-ratio: 16 / 9; overflow: hidden;
+      border-radius: var(--r-lg); box-shadow: var(--shadow-lg);
+      background: linear-gradient(135deg, rgba(30,98,86,0.08), rgba(227,184,77,0.10));
+    }
+    .hero-image img { width: 100%; height: 100%; object-fit: cover; display: block; }
+
+    .article-body { padding: var(--sp-8) 0 var(--sp-9); }
+    .article-body .container-narrow { max-width: 720px; }
+    .article-body p {
+      font-size: 1.12rem; line-height: 1.75; color: var(--ink-soft);
+      margin: 0 0 var(--sp-5);
+    }
+    .article-body h2 {
+      font-size: clamp(1.6rem, 3vw, 2.2rem);
+      margin: var(--sp-8) 0 var(--sp-4);
+      color: var(--pine-deep);
+    }
+    .article-body h2:first-of-type { margin-top: var(--sp-4); }
+    .article-body strong { color: var(--pine-deep); font-weight: 600; }
+
+    .pull-quote {
+      font-family: var(--font-display);
+      font-style: italic;
+      font-size: clamp(1.5rem, 2.6vw, 2rem);
+      line-height: 1.35;
+      color: var(--pine-deep);
+      border-left: 4px solid var(--gold);
+      padding: var(--sp-3) 0 var(--sp-3) var(--sp-5);
+      margin: var(--sp-7) 0;
+    }
+
+    .inline-image {
+      margin: var(--sp-7) calc(-1 * var(--sp-5));
+      border-radius: var(--r-md);
+      overflow: hidden;
+      box-shadow: var(--shadow-md);
+      aspect-ratio: 16 / 9;
+      background: linear-gradient(135deg, rgba(30,98,86,0.06), rgba(227,184,77,0.08));
+    }
+    .inline-image img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    @media (max-width: 720px) {
+      .inline-image { margin-left: 0; margin-right: 0; }
+    }
+
+    .key-takeaways {
+      background: var(--cream-deep);
+      border-radius: var(--r-md);
+      padding: var(--sp-6);
+      margin: var(--sp-7) 0;
+      border-left: 4px solid var(--teal);
+    }
+    .key-takeaways h3 {
+      margin-top: 0;
+      font-family: var(--font-sans);
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      color: var(--teal);
+      font-weight: 700;
+    }
+
+    .author-card {
+      display: flex; gap: var(--sp-5); align-items: center;
+      padding: var(--sp-6); margin: var(--sp-8) 0 var(--sp-6);
+      background: var(--cream-deep); border-radius: var(--r-md);
+    }
+    .author-card .avatar {
+      width: 84px; height: 84px; border-radius: 50%; overflow: hidden;
+      flex-shrink: 0; background: var(--cream);
+    }
+    .author-card .avatar img { width: 100%; height: 100%; object-fit: cover; }
+    .author-card .meta p { margin: 0; font-size: 1rem; line-height: 1.5; }
+    .author-card .meta .name {
+      font-family: var(--font-display); font-size: 1.3rem; color: var(--pine-deep);
+      margin-bottom: 4px;
+    }
+    .author-card .meta .role {
+      color: var(--muted); font-size: 0.88rem;
+      text-transform: uppercase; letter-spacing: 0.08em; font-weight: 600;
+    }
+    @media (max-width: 600px) {
+      .author-card { flex-direction: column; text-align: center; }
+    }
+
+    .post-cta-block {
+      background: var(--pine);
+      color: var(--cream);
+      padding: var(--sp-7);
+      border-radius: var(--r-lg);
+      text-align: center;
+      margin: var(--sp-7) 0 var(--sp-5);
+    }
+    .post-cta-block h3 {
+      color: var(--cream);
+      font-size: 1.6rem;
+      margin-bottom: var(--sp-3);
+      font-family: var(--font-display);
+      font-style: italic;
+      font-weight: 400;
+    }
+    .post-cta-block p {
+      color: rgba(251,245,233,0.85);
+      max-width: 480px;
+      margin: 0 auto var(--sp-5);
+      font-size: 1.02rem;
+    }
+  </style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="brand" aria-label="Hello Studio — home"><img src="assets/logo/logo-mark.png" alt="" class="brand-logo" onerror="this.remove(); document.querySelector('.brand-text').style.display='inline';"><span class="brand-text">Hello <em>Studio</em></span></a>
+    <nav aria-label="Primary">
+      <ul class="nav-links">
+        <li><a href="about.html">About</a></li>
+        <li><a href="coaching.html">1:1 Coaching</a></li>
+        <li><a href="vault.html">The Vault</a></li>
+        <li><a href="blog.html" aria-current="page">Journal</a></li>
+      </ul>
+    </nav>
+    <a href="coaching.html#apply" class="btn btn-gold btn-small nav-cta">Work with us <span class="arr">→</span></a>
+    <button class="nav-toggle" aria-label="Toggle menu" onclick="document.querySelector('.mobile-drawer').classList.toggle('is-open')">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+  </div>
+  <div class="mobile-drawer">
+    <ul>
+      <li><a href="about.html">About</a></li>
+      <li><a href="coaching.html">1:1 Coaching</a></li>
+      <li><a href="vault.html">The Vault</a></li>
+      <li><a href="blog.html">Journal</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+</header>
+
+<article itemscope itemtype="https://schema.org/Article">
+
+  <!-- ARTICLE HERO -->
+  <section class="article-hero">
+    <div class="container-narrow">
+      <div class="eyebrow-row">
+        <a href="blog.html" style="color: var(--muted); font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.18em; font-weight: 600; border-bottom: none;">← The Journal</a>
+        <span style="color: var(--gold);">·</span>
+        <span class="eyebrow">Group Practice</span>
+      </div>
+      <h1 itemprop="headline">Don't Market Before <em class="serif-accent">You're Ready</em></h1>
+      <p class="lead" itemprop="description">The real risk of marketing too early isn't wasted money — it's losing the clients who were already looking for you. Here's what "ready" actually means.</p>
+      <div class="article-byline">
+        <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="name">Bailey Bryant</span></span>
+        <span class="dot">·</span>
+        <span>7 min read</span>
+        <span class="dot">·</span>
+        <time datetime="2026-05-03" itemprop="datePublished">May 2026</time>
+      </div>
+    </div>
+    <div class="hero-image-wrap">
+      <div class="hero-image">
+        <img src="assets/photos/journal/dont-market-hero.jpg"
+             alt="A laptop open to a website mockup with sticky notes around it — the kind of brand and website work that needs to be done before marketing dollars start flowing."
+             itemprop="image"
+             onerror="this.parentElement.innerHTML='&lt;div style=&quot;width:100%;height:100%;display:flex;align-items:center;justify-content:center;text-align:center;color:var(--muted);font-style:italic;padding:0 var(--sp-5);background:linear-gradient(135deg,rgba(30,98,86,0.08),rgba(227,184,77,0.10));&quot;&gt;Hero image placeholder&lt;br&gt;&lt;span style=&quot;font-size:0.75rem;&quot;&gt;assets/photos/journal/dont-market-hero.jpg&lt;/span&gt;&lt;/div&gt;';">
+      </div>
+    </div>
+  </section>
+
+  <!-- ARTICLE BODY -->
+  <section class="article-body bg-cream">
+    <div class="container-narrow">
+      <div itemprop="articleBody">
+
+        <p>Most practice owners think the risk of marketing too early is wasted money.</p>
+
+        <p>It's not. That's the least of it.</p>
+
+        <p>The real risk is that someone finds you, forms an impression, and leaves — and that impression sticks. First impressions in business work a lot like first impressions in life: they're fast, they're sticky, and they're hard to undo. If someone lands on your website when it's half-built, confusing, or doesn't clearly tell them what to do next, they don't think <em>"I'll come back when this is better."</em> They think <em>"this isn't for me"</em> — and they move on. Possibly to your competitor. Possibly forever.</p>
+
+        <p><strong>Marketing before you're ready doesn't just burn your budget. It burns your shot at the clients who were already looking for you.</strong></p>
+
+        <h2>What "not ready" actually looks like</h2>
+
+        <p>The most common version I see: a practice owner starts driving traffic — through ads, directories, networking, social media — to a website that isn't doing its job.</p>
+
+        <p>The website exists. It has a logo and some copy. But it isn't easy to navigate. It doesn't clearly communicate who this practice is for. It doesn't funnel visitors toward a single, obvious next step. There's no clear call to action, or there are too many competing ones, or the contact process is buried somewhere a person has to search for.</p>
+
+        <p>So the traffic arrives. And then it leaves.</p>
+
+        <p>You paid — in time, money, or both — to get someone to your door. And the door was hard to open.</p>
+
+        <p>The other version is a brand that isn't yet legible. If someone lands on your online presence and has to work to understand what you do, who you serve, and why they should trust you — you've already lost them. <strong>People's brains are lazy by design. If something requires effort to decode, they don't decode it. They move on to something that doesn't.</strong></p>
+
+        <figure class="inline-image">
+          <img src="assets/photos/journal/dont-market-website.jpg"
+               alt="A laptop displaying a clean, well-designed website on a tidy desk — the kind of digital presence that does its job before marketing brings traffic to it."
+               onerror="this.parentElement.innerHTML='&lt;div style=&quot;width:100%;height:100%;display:flex;align-items:center;justify-content:center;text-align:center;color:var(--muted);font-style:italic;padding:0 var(--sp-5);background:linear-gradient(135deg,rgba(30,98,86,0.06),rgba(227,184,77,0.08));&quot;&gt;Image placeholder&lt;br&gt;&lt;span style=&quot;font-size:0.75rem;&quot;&gt;assets/photos/journal/dont-market-website.jpg&lt;/span&gt;&lt;/div&gt;';">
+        </figure>
+
+        <h2>What the branding phase actually looks like</h2>
+
+        <p>Before you market, you need to know what your brand is — and your brand is more than a logo.</p>
+
+        <p>It's what your practice <em>looks like</em>: your colors, your fonts, your visual identity. It's what your practice <em>feels like</em>: the tone of your copy, the warmth or the directness or the particular energy that makes someone feel like they've found the right place. And it's what your practice <em>stands for</em>: who it's for, what it believes, what it promises, and why that matters.</p>
+
+        <p>When all of those things are aligned and clearly expressed — across your website, your directory profiles, your social presence, your intake materials — your brand does the heavy lifting for you. People land on it and feel something. They feel seen. They feel drawn in. They feel like <em>this is the place</em>.</p>
+
+        <blockquote class="pull-quote">
+          That feeling is what turns a visitor into a lead, and a lead into a client.
+        </blockquote>
+
+        <p>If your brand isn't there yet — if it's inconsistent, unclear, or just not fully baked — the work to do is <em>that</em>, not marketing. Spend the time getting your visual identity locked in. Get feedback on your website from people who are not trying to be nice to you. Read your own copy as if you're a stranger who has never heard of you. Ask: <strong>is this clear? Does it make me want to reach out?</strong></p>
+
+        <h2>Your website is a funnel, not a brochure</h2>
+
+        <p>This is the mindset shift that changes everything.</p>
+
+        <p>A brochure is something you hand someone so they have information. A funnel is something that moves people from <em>"I found this"</em> to <em>"I reached out."</em> Those are completely different design goals.</p>
+
+        <p>Your website should have one primary job: <strong>get your ideal client to make contact.</strong> Everything on the site — every page, every section, every piece of copy — should be in service of that job. Is it easy to find your contact form? Is there a clear call to action on every page? Is the path from "I'm curious" to "I've submitted an inquiry" frictionless?</p>
+
+        <p>If someone has to think too hard about what to do next, they won't do it. <em>The next step should always be obvious.</em></p>
+
+        <figure class="inline-image">
+          <img src="assets/photos/journal/dont-market-funnel.jpg"
+               alt="A person sketching a customer journey on paper — the funnel mindset that turns a website from a brochure into a conversion engine."
+               onerror="this.parentElement.innerHTML='&lt;div style=&quot;width:100%;height:100%;display:flex;align-items:center;justify-content:center;text-align:center;color:var(--muted);font-style:italic;padding:0 var(--sp-5);background:linear-gradient(135deg,rgba(30,98,86,0.06),rgba(227,184,77,0.08));&quot;&gt;Image placeholder&lt;br&gt;&lt;span style=&quot;font-size:0.75rem;&quot;&gt;assets/photos/journal/dont-market-funnel.jpg&lt;/span&gt;&lt;/div&gt;';">
+        </figure>
+
+        <h2>"Good enough" is the goal. Not perfect.</h2>
+
+        <p>Here's where I want to offer some relief: <strong>you do not need everything to be perfect before you start marketing.</strong> You need it to be <em>good enough</em> — meaning it won't turn off your ideal client.</p>
+
+        <p>There's a difference between a website that's still evolving and a website that actively undermines trust. Between a brand that's still developing its voice and one that's incoherent. You're aiming for the threshold where someone lands on your presence and thinks <em>"yes, this feels right"</em> — not for the finish line that, frankly, doesn't exist.</p>
+
+        <p>Your materials will keep improving. Your brand will keep sharpening. The goal right now is to get to a place where what someone finds when they look for you is working in your favor, not against you.</p>
+
+        <h2>The timing tension</h2>
+
+        <p>Here's the honest complication: marketing takes time to build momentum.</p>
+
+        <p>Referral relationships take months to develop. SEO takes time to compound. Building a recognizable presence in your community doesn't happen overnight. If you wait until everything feels perfectly ready before you start, you'll delay the results you need.</p>
+
+        <p>So the goal isn't to wait indefinitely — it's to get ready with intention and then move. Get the brand legible. Get the website converting. Get your intake process functional. And then start building your marketing presence and let it develop while your practice is in good shape to receive what it generates.</p>
+
+        <div class="key-takeaways">
+          <h3>The Sequence That Matters</h3>
+          <ol style="margin: 0; padding-left: 1.4rem; color: var(--ink-soft); line-height: 1.6;">
+            <li style="margin-bottom: var(--sp-3);"><strong>Brand first</strong> — visual identity, voice, and clarity about who it's for.</li>
+            <li style="margin-bottom: var(--sp-3);"><strong>Infrastructure second</strong> — website that converts, intake process that works.</li>
+            <li><strong>Marketing third</strong> — driving traffic to a presence that's ready to receive it.</li>
+          </ol>
+        </div>
+
+        <p>Not because the others aren't important — they all are — but because <strong>marketing amplifies what's already there. If what's already there is weak, marketing amplifies the weakness.</strong></p>
+
+        <p><em>Build something worth driving people to. Then drive people to it.</em></p>
+
+        <!-- AUTHOR CARD -->
+        <aside class="author-card" aria-label="About the author">
+          <div class="avatar">
+            <img src="assets/photos/bailey-portrait.png"
+                 alt="Dr. Bailey Bryant, psychologist and group practice owner"
+                 onerror="this.parentElement.innerHTML='&lt;div style=&quot;width:100%;height:100%;display:flex;align-items:center;justify-content:center;background:var(--cream);color:var(--gold-warm);font-family:var(--font-display);font-size:1.6rem;&quot;&gt;BB&lt;/div&gt;';">
+          </div>
+          <div class="meta">
+            <p class="role">Written by</p>
+            <p class="name">Dr. Bailey Bryant</p>
+            <p style="color: var(--muted); margin-top: 4px;">Psychologist, group practice owner of 10+ years, and founder of Hello Studio. Helping practice owners build businesses that don't quietly burn them out.</p>
+          </div>
+        </aside>
+
+        <!-- CTA -->
+        <div class="post-cta-block">
+          <h3>Not sure if you're ready?</h3>
+          <p>Studio 1:1s include a full review of your online presence and intake process — let's find out together.</p>
+          <a href="coaching.html#apply" class="btn btn-gold">Explore 1:1 Coaching <span class="arr">→</span></a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- RELATED POSTS -->
+  <section class="section bg-cream-deep">
+    <div class="container">
+      <div style="text-align: center; margin-bottom: var(--sp-7);">
+        <p class="eyebrow">Keep Reading</p>
+        <h2>More from <em class="serif-accent">the Journal</em></h2>
+      </div>
+      <div class="grid-3">
+        <article class="post-card">
+          <div class="post-meta"><span>Group Practice</span><span>·</span><span>8 min</span></div>
+          <h3><a href="journal-marketing-sales-availability.html" style="border-bottom:none;color:inherit;">Is It a Marketing Problem, a Sales Problem, or an Availability Problem?</a></h3>
+          <p class="post-snippet">Most growth issues are misdiagnosed. A framework for telling them apart — plus the benchmarks that name what you're actually solving.</p>
+          <a href="journal-marketing-sales-availability.html" class="read-more">Read more →</a>
+        </article>
+        <article class="post-card">
+          <div class="post-meta"><span>Group Practice</span><span>·</span><span>9 min</span></div>
+          <h3><a href="journal-infrastructure-before-hire.html" style="border-bottom:none;color:inherit;">The Infrastructure You Need Before You Hire Anyone</a></h3>
+          <p class="post-snippet">The systems, contracts, finances, and paperwork that need to exist before your first clinician signs an offer letter.</p>
+          <a href="journal-infrastructure-before-hire.html" class="read-more">Read more →</a>
+        </article>
+        <article class="post-card">
+          <div class="post-meta"><span>Systems</span><span>·</span><span>7 min</span></div>
+          <h3><a href="journal-referral-tracking.html" style="border-bottom:none;color:inherit;">How to Track Referrals (And Why Most Practice Owners Never Do)</a></h3>
+          <p class="post-snippet">What to track, what reveals real signal, and how to turn referral data into the clarity that lets you grow on purpose.</p>
+          <a href="journal-referral-tracking.html" class="read-more">Read more →</a>
+        </article>
+      </div>
+      <div style="text-align: center; margin-top: var(--sp-7);">
+        <a href="blog.html" class="btn btn-ghost">← Back to all essays</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SUBSCRIBE -->
+  <section class="section bg-pine">
+    <div class="container-narrow text-center" style="text-align: center;">
+      <p class="eyebrow">Studio Dispatch</p>
+      <h2>One thoughtful essay, <em class="serif-accent">every other Friday.</em></h2>
+      <p style="color: rgba(251,245,233,0.8); max-width: 560px; margin: 0 auto var(--sp-5);">No funnel tricks, no "as seen on" brag bar, no seven-email sequence. Just one honest thing about the business of running a practice.</p>
+      <form action="https://formsubmit.co/hello@hellostudio.online" method="POST" style="max-width: 440px; margin: 0 auto; display: flex; gap: 8px; flex-wrap: wrap;" data-email-to="hello@hellostudio.online" data-subject="Journal Subscribe signup — hellostudio.online" data-success-message="&lt;p style=&quot;color:var(--cream);margin:0;&quot;&gt;You're on the list! 💌&lt;/p&gt;">
+        <input type="email" name="email" placeholder="you@yourpractice.com" required style="flex:1; padding: 14px 18px; border: 0; border-radius: var(--r-pill); font-family: var(--font-sans); font-size: 1rem;">
+        <button type="submit" class="btn btn-gold">Subscribe</button>
+      </form>
+    </div>
+  </section>
+
+</article>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <img class="footer-logo" src="assets/logo/logo-mark.png" alt="Hello Studio">
+        <p style="color: rgba(251,245,233,0.7); max-width: 320px;">Tools and conversations that move you forward. A sister company to Hello Mental Health.</p>
+      </div>
+      <div>
+        <h4>Studio</h4>
+        <ul>
+          <li><a href="coaching.html">1:1 Coaching</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Resources</h4>
+        <ul>
+          <li><a href="vault.html">The Vault</a></li>
+          <li><a href="blog.html">Journal</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Visit</h4>
+        <ul>
+          <li>126 Wellington Place<br>Cincinnati, OH 45219</li>
+          <li><a href="https://hellomentalhealth.com">hellomentalhealth.com ↗</a></li>
+          <li><a href="https://www.instagram.com/hello.mentalhealth/">Instagram ↗</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Hello Studio. All rights reserved.</span>
+      <span>Powered by coffee, community, and creative brains everywhere.</span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

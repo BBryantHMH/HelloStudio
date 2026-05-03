@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO -->
+  <title>What Nobody Tells You About Going From Solo to Group Practice | Hello Studio</title>
+  <meta name="description" content="The honest reality of growing from solo therapist to group practice owner — infrastructure shocks, hiring lessons, and the financial lag nobody warns you about. By Dr. Bailey Bryant.">
+  <meta name="keywords" content="solo to group practice, group practice owner, scaling therapy practice, hiring clinicians, group practice infrastructure, therapy practice business, practice owner coaching">
+  <meta name="author" content="Dr. Bailey Bryant">
+  <link rel="canonical" href="https://hellostudio.online/journal-solo-to-group.html">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="What Nobody Tells You About Going From Solo to Group Practice">
+  <meta property="og:description" content="The honest reality of growing from solo therapist to group practice owner — infrastructure, hiring, and the financial lag nobody warns you about.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://hellostudio.online/journal-solo-to-group.html">
+  <meta property="og:image" content="https://hellostudio.online/assets/photos/journal/solo-to-group-hero.jpg">
+  <meta property="og:site_name" content="Hello Studio">
+  <meta property="article:published_time" content="2026-05-03">
+  <meta property="article:author" content="Dr. Bailey Bryant">
+  <meta property="article:section" content="Group Practice">
+  <meta property="article:tag" content="Group Practice">
+  <meta property="article:tag" content="Hiring">
+  <meta property="article:tag" content="Practice Growth">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="What Nobody Tells You About Going From Solo to Group Practice">
+  <meta name="twitter:description" content="Infrastructure shocks, hiring lessons, and the financial lag nobody warns you about — the honest reality of growing a therapy practice.">
+  <meta name="twitter:image" content="https://hellostudio.online/assets/photos/journal/solo-to-group-hero.jpg">
+
+  <!-- JSON-LD: Article schema for Google + AI summarizers -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "What Nobody Tells You About Going From Solo to Group Practice",
+    "description": "The honest reality of growing from solo therapist to group practice owner — infrastructure shocks, hiring lessons, and the financial lag nobody warns you about.",
+    "image": "https://hellostudio.online/assets/photos/journal/solo-to-group-hero.jpg",
+    "datePublished": "2026-05-03",
+    "dateModified": "2026-05-03",
+    "author": {
+      "@type": "Person",
+      "name": "Dr. Bailey Bryant",
+      "url": "https://hellostudio.online/about.html",
+      "jobTitle": "Psychologist & Group Practice Owner",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Hello Mental Health"
+      }
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Hello Studio",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://hellostudio.online/assets/logo/logo-mark.png"
+      }
+    },
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://hellostudio.online/journal-solo-to-group.html"
+    },
+    "articleSection": "Group Practice",
+    "keywords": "solo to group practice, group practice owner, scaling therapy practice, hiring clinicians, practice infrastructure",
+    "wordCount": 1200,
+    "timeRequired": "PT8M"
+  }
+  </script>
+
+  <!-- JSON-LD: BreadcrumbList -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://hellostudio.online/"},
+      {"@type": "ListItem", "position": 2, "name": "Journal", "item": "https://hellostudio.online/blog.html"},
+      {"@type": "ListItem", "position": 3, "name": "What Nobody Tells You About Going From Solo to Group Practice", "item": "https://hellostudio.online/journal-solo-to-group.html"}
+    ]
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+  <script src="js/thinkific-links.js" defer></script>
+
+  <!-- Article-specific styles (scoped, additive) -->
+  <style>
+    .article-hero {
+      position: relative;
+      padding: clamp(2.5rem, 7vw, 5rem) 0 clamp(2rem, 5vw, 3.5rem);
+      background: var(--cream);
+      overflow: hidden;
+    }
+    .article-hero .container-narrow { position: relative; z-index: 2; }
+    .article-hero .eyebrow-row {
+      display: flex; gap: var(--sp-3); align-items: center; justify-content: center;
+      margin-bottom: var(--sp-5); flex-wrap: wrap;
+    }
+    .article-hero h1 {
+      font-size: clamp(2.2rem, 5vw, 3.6rem);
+      text-align: center;
+      max-width: 800px;
+      margin: 0 auto var(--sp-5);
+    }
+    .article-hero .lead { text-align: center; max-width: 720px; margin: 0 auto var(--sp-6); }
+    .article-byline {
+      display: flex; gap: var(--sp-3); align-items: center; justify-content: center;
+      color: var(--muted); font-size: 0.88rem; text-transform: uppercase;
+      letter-spacing: 0.08em; font-weight: 600; flex-wrap: wrap;
+    }
+    .article-byline .dot { color: var(--gold); }
+
+    .hero-image-wrap {
+      max-width: 1080px; margin: 0 auto; padding: 0 var(--sp-6);
+      margin-top: var(--sp-7);
+    }
+    .hero-image {
+      width: 100%; aspect-ratio: 16 / 9; overflow: hidden;
+      border-radius: var(--r-lg); box-shadow: var(--shadow-lg);
+      background: linear-gradient(135deg, rgba(30,98,86,0.08), rgba(227,184,77,0.10));
+    }
+    .hero-image img { width: 100%; height: 100%; object-fit: cover; display: block; }
+
+    .article-body { padding: var(--sp-8) 0 var(--sp-9); }
+    .article-body .container-narrow { max-width: 720px; }
+    .article-body p {
+      font-size: 1.12rem; line-height: 1.75; color: var(--ink-soft);
+      margin: 0 0 var(--sp-5);
+    }
+    .article-body h2 {
+      font-size: clamp(1.6rem, 3vw, 2.2rem);
+      margin: var(--sp-8) 0 var(--sp-4);
+      color: var(--pine-deep);
+    }
+    .article-body h2:first-of-type { margin-top: var(--sp-4); }
+    .article-body h3 {
+      font-size: 1.3rem; margin: var(--sp-6) 0 var(--sp-3);
+      color: var(--pine-deep);
+    }
+    .article-body strong { color: var(--pine-deep); font-weight: 600; }
+    .article-body a:not(.btn) {
+      color: var(--gold-warm); border-bottom: 1px solid rgba(184,130,25,0.35);
+    }
+    .article-body a:not(.btn):hover { border-color: var(--gold-warm); }
+
+    .pull-quote {
+      font-family: var(--font-display);
+      font-style: italic;
+      font-size: clamp(1.5rem, 2.6vw, 2rem);
+      line-height: 1.35;
+      color: var(--pine-deep);
+      border-left: 4px solid var(--gold);
+      padding: var(--sp-3) 0 var(--sp-3) var(--sp-5);
+      margin: var(--sp-7) 0;
+    }
+
+    .inline-image {
+      margin: var(--sp-7) calc(-1 * var(--sp-5));
+      border-radius: var(--r-md);
+      overflow: hidden;
+      box-shadow: var(--shadow-md);
+      aspect-ratio: 16 / 9;
+      background: linear-gradient(135deg, rgba(30,98,86,0.06), rgba(227,184,77,0.08));
+    }
+    .inline-image img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    @media (max-width: 720px) {
+      .inline-image { margin-left: 0; margin-right: 0; }
+    }
+
+    .key-takeaways {
+      background: var(--cream-deep);
+      border-radius: var(--r-md);
+      padding: var(--sp-6);
+      margin: var(--sp-7) 0;
+      border-left: 4px solid var(--teal);
+    }
+    .key-takeaways h3 {
+      margin-top: 0;
+      font-family: var(--font-sans);
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      color: var(--teal);
+      font-weight: 700;
+    }
+    .key-takeaways ul {
+      margin: 0; padding-left: 1.2rem;
+    }
+    .key-takeaways li {
+      margin-bottom: var(--sp-3);
+      color: var(--ink-soft);
+      line-height: 1.55;
+    }
+
+    .author-card {
+      display: flex; gap: var(--sp-5); align-items: center;
+      padding: var(--sp-6); margin: var(--sp-8) 0 var(--sp-6);
+      background: var(--cream-deep); border-radius: var(--r-md);
+    }
+    .author-card .avatar {
+      width: 84px; height: 84px; border-radius: 50%; overflow: hidden;
+      flex-shrink: 0; background: var(--cream);
+    }
+    .author-card .avatar img { width: 100%; height: 100%; object-fit: cover; }
+    .author-card .meta p { margin: 0; font-size: 1rem; line-height: 1.5; }
+    .author-card .meta .name {
+      font-family: var(--font-display); font-size: 1.3rem; color: var(--pine-deep);
+      margin-bottom: 4px;
+    }
+    .author-card .meta .role {
+      color: var(--muted); font-size: 0.88rem;
+      text-transform: uppercase; letter-spacing: 0.08em; font-weight: 600;
+    }
+    @media (max-width: 600px) {
+      .author-card { flex-direction: column; text-align: center; }
+    }
+
+    .post-cta-block {
+      background: var(--pine);
+      color: var(--cream);
+      padding: var(--sp-7);
+      border-radius: var(--r-lg);
+      text-align: center;
+      margin: var(--sp-7) 0 var(--sp-5);
+    }
+    .post-cta-block h3 {
+      color: var(--cream);
+      font-size: 1.6rem;
+      margin-bottom: var(--sp-3);
+    }
+    .post-cta-block p {
+      color: rgba(251,245,233,0.85);
+      max-width: 480px;
+      margin: 0 auto var(--sp-5);
+      font-size: 1.02rem;
+    }
+  </style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="brand" aria-label="Hello Studio — home"><img src="assets/logo/logo-mark.png" alt="" class="brand-logo" onerror="this.remove(); document.querySelector('.brand-text').style.display='inline';"><span class="brand-text">Hello <em>Studio</em></span></a>
+    <nav aria-label="Primary">
+      <ul class="nav-links">
+        <li><a href="about.html">About</a></li>
+        <li><a href="coaching.html">1:1 Coaching</a></li>
+        <li><a href="vault.html">The Vault</a></li>
+        <li><a href="blog.html" aria-current="page">Journal</a></li>
+      </ul>
+    </nav>
+    <a href="coaching.html#apply" class="btn btn-gold btn-small nav-cta">Work with us <span class="arr">→</span></a>
+    <button class="nav-toggle" aria-label="Toggle menu" onclick="document.querySelector('.mobile-drawer').classList.toggle('is-open')">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+  </div>
+  <div class="mobile-drawer">
+    <ul>
+      <li><a href="about.html">About</a></li>
+      <li><a href="coaching.html">1:1 Coaching</a></li>
+      <li><a href="vault.html">The Vault</a></li>
+      <li><a href="blog.html">Journal</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+</header>
+
+<article itemscope itemtype="https://schema.org/Article">
+
+  <!-- ARTICLE HERO -->
+  <section class="article-hero">
+    <div class="container-narrow">
+      <div class="eyebrow-row">
+        <a href="blog.html" style="color: var(--muted); font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.18em; font-weight: 600; border-bottom: none;">← The Journal</a>
+        <span style="color: var(--gold);">·</span>
+        <span class="eyebrow">Group Practice</span>
+      </div>
+      <h1 itemprop="headline">What Nobody Tells You About Going <em class="serif-accent">From Solo to Group</em></h1>
+      <p class="lead" itemprop="description">The honest reality of growing from solo therapist to group practice owner — the infrastructure shocks, the hiring lessons, and the financial lag nobody warns you about.</p>
+      <div class="article-byline">
+        <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="name">Bailey Bryant</span></span>
+        <span class="dot">·</span>
+        <span>8 min read</span>
+        <span class="dot">·</span>
+        <time datetime="2026-05-03" itemprop="datePublished">May 2026</time>
+      </div>
+    </div>
+    <div class="hero-image-wrap">
+      <div class="hero-image">
+        <img src="assets/photos/journal/solo-to-group-hero.jpg"
+             alt="A warmly lit therapy office with two chairs facing each other — the kind of intimate clinical space a solo practitioner builds before growing into a group practice."
+             itemprop="image"
+             onerror="this.parentElement.innerHTML='&lt;div style=&quot;width:100%;height:100%;display:flex;align-items:center;justify-content:center;text-align:center;color:var(--muted);font-style:italic;padding:0 var(--sp-5);background:linear-gradient(135deg,rgba(30,98,86,0.08),rgba(227,184,77,0.10));&quot;&gt;Hero image placeholder&lt;br&gt;&lt;span style=&quot;font-size:0.75rem;&quot;&gt;assets/photos/journal/solo-to-group-hero.jpg&lt;/span&gt;&lt;/div&gt;';">
+      </div>
+    </div>
+  </section>
+
+  <!-- ARTICLE BODY -->
+  <section class="article-body bg-cream">
+    <div class="container-narrow">
+      <div itemprop="articleBody">
+
+        <p>Someone told me early in my career that group practice was the path to passive income. I think about that a lot now — usually when I'm knee-deep in a credentialing question nobody warned me about, or reviewing an employment contract at 9pm, or realizing that one of my clinicians needs more support than I expected this week.</p>
+
+        <p><em>Passive. Income.</em></p>
+
+        <p>I have never laughed harder at two words in my life.</p>
+
+        <p>Here's what I actually know about making the leap from solo to group practice — the version nobody handed me, the one I wish they had.</p>
+
+        <h2>The infrastructure will shock you</h2>
+
+        <p>Not the hiring. Not the management. The <strong>infrastructure</strong>.</p>
+
+        <p>Before you bring on your first person, you are suddenly responsible for things you have never thought about once in your solo career. An NPI 2. An employment attorney who understands the nuances of your field. A real payroll system. A personnel file process. An employee manual. Background check vendors. Credentialing your new hire on the insurance panels you've been billing under your own number for years. A phone system that scales. A second, third, fourth bank account if you're running Profit First.</p>
+
+        <p>None of this is hard, exactly. But it is a lot. And it all needs to exist <em>before</em> your first hire walks in the door — not after.</p>
+
+        <p>The solo practice owner brain thinks: <em>I just need to find the right person and we're off.</em> The group practice owner brain has to think 12 steps ahead. It's a different mode entirely. It takes some getting used to.</p>
+
+        <figure class="inline-image">
+          <img src="assets/photos/journal/solo-to-group-infrastructure.jpg"
+               alt="A desk with a calculator, notebook, and planning materials — the kind of operational groundwork that has to exist before a first clinician is hired into a group practice."
+               onerror="this.parentElement.innerHTML='&lt;div style=&quot;width:100%;height:100%;display:flex;align-items:center;justify-content:center;text-align:center;color:var(--muted);font-style:italic;padding:0 var(--sp-5);background:linear-gradient(135deg,rgba(30,98,86,0.06),rgba(227,184,77,0.08));&quot;&gt;Image placeholder&lt;br&gt;&lt;span style=&quot;font-size:0.75rem;&quot;&gt;assets/photos/journal/solo-to-group-infrastructure.jpg&lt;/span&gt;&lt;/div&gt;';">
+        </figure>
+
+        <h2>The people you hire are not like you</h2>
+
+        <p>This one surprised me more than anything.</p>
+
+        <p>The clinicians who choose to work for a group practice — good ones, talented ones — often aren't entrepreneurial. They don't want to run a business. They want to do good clinical work and go home. That's not a flaw. It's actually a feature: you want people who are excellent at the clinical work, and you handle the business.</p>
+
+        <p>But it means you cannot lead them the way you lead yourself.</p>
+
+        <p>You will need to set expectations clearly, in writing, before they start. You will need to follow up. You will need to hold people accountable and have real conversations when things aren't working. You will need to accept — genuinely accept — that no one will ever care about this practice the way you do. And that's okay. That's not their job. Their job is to serve their clients well. Your job is to build the container that makes that possible.</p>
+
+        <p>If you're not comfortable with that dynamic yet, get comfortable. Fast.</p>
+
+        <figure class="inline-image">
+          <img src="assets/photos/journal/solo-to-group-team.jpg"
+               alt="A diverse team of professionals collaborating around a conference table — illustrating the new dynamic of leading clinicians who care deeply about clinical work but not about running a business."
+               onerror="this.parentElement.innerHTML='&lt;div style=&quot;width:100%;height:100%;display:flex;align-items:center;justify-content:center;text-align:center;color:var(--muted);font-style:italic;padding:0 var(--sp-5);background:linear-gradient(135deg,rgba(30,98,86,0.06),rgba(227,184,77,0.08));&quot;&gt;Image placeholder&lt;br&gt;&lt;span style=&quot;font-size:0.75rem;&quot;&gt;assets/photos/journal/solo-to-group-team.jpg&lt;/span&gt;&lt;/div&gt;';">
+        </figure>
+
+        <h2>You might make less money. At first.</h2>
+
+        <p>This is the part that doesn't make it into the posts about growing your practice.</p>
+
+        <p>I remember the moment clearly. I had added new clinicians. Their caseloads were filling up. Things looked good on paper. And then I looked at my own income — and it had gone down. Significantly. My costs had risen, I was working harder than I ever had, and I was making less than I did when it was just me.</p>
+
+        <p>I was terrified I had made a huge mistake.</p>
+
+        <p>What I didn't fully understand yet was that the structure matters everything. The split between you and your clinicians, whether you're running 1099 contractors or W2 employees, how quickly their caseloads fill, whether your overhead is actually under control — all of it determines whether the model works financially. If the structure isn't right, you can work yourself into the ground and come out behind.</p>
+
+        <p>This is why I tell every practice owner I work with: <strong>get your financial infrastructure right before you hire anyone</strong>. Understand your numbers. Model out what the math looks like at different caseload levels. And build a real cash buffer before you bring anyone on, because there will be a lag between when your costs start and when the revenue catches up.</p>
+
+        <blockquote class="pull-quote">
+          The passive income people don't mention the lag.
+        </blockquote>
+
+        <figure class="inline-image">
+          <img src="assets/photos/journal/solo-to-group-finance.jpg"
+               alt="A desk with a calculator, binders, and a notebook — the kind of careful financial modeling and cash buffer planning that makes the solo-to-group transition survivable."
+               onerror="this.parentElement.innerHTML='&lt;div style=&quot;width:100%;height:100%;display:flex;align-items:center;justify-content:center;text-align:center;color:var(--muted);font-style:italic;padding:0 var(--sp-5);background:linear-gradient(135deg,rgba(30,98,86,0.06),rgba(227,184,77,0.08));&quot;&gt;Image placeholder&lt;br&gt;&lt;span style=&quot;font-size:0.75rem;&quot;&gt;assets/photos/journal/solo-to-group-finance.jpg&lt;/span&gt;&lt;/div&gt;';">
+        </figure>
+
+        <h2>You are responsible for people's livelihoods. Full stop.</h2>
+
+        <p>At some point it hit me — really hit me — that the people working in my practice were counting on me. Their ability to pay rent, their student loans, their families. It all ran through my decisions. My competence as an operator. My judgment as a business owner.</p>
+
+        <p>That's not something to be scared of. But it is something to be serious about.</p>
+
+        <p>Your ignorance has consequences now. Your mistakes have consequences. Not just for you — for them. That weight will sharpen you quickly if you let it. It made me want to get better at the business side faster than anything else ever had.</p>
+
+        <h2>The mindset shift nobody warns you about</h2>
+
+        <p>Going from solo to group isn't just an operational change. It's an identity change.</p>
+
+        <p>You have to get comfortable with money in a way most clinicians were never trained for. You have to build systems and processes — real ones, documented ones, ones that don't live only in your head. You have to set expectations and hold people to them. You have to accept that as the owner, you are ultimately responsible for everything. Even the things that aren't your fault.</p>
+
+        <p><em>No one will care as much as you. Nor should they.</em></p>
+
+        <p>That sentence used to frustrate me. Now I think it's just the truth. The practice is yours. The vision is yours. The accountability is yours. The faster you make peace with that, the better owner you become.</p>
+
+        <h2>Before you post the job listing</h2>
+
+        <p>If I could sit across from every practice owner considering this move, here's what I'd tell them before they did anything else:</p>
+
+        <div class="key-takeaways">
+          <h3>The Three Things to Do First</h3>
+          <ul>
+            <li><strong>Build a financial buffer.</strong> Not a thin one. A real one. The lag is coming and you want to be ready for it.</li>
+            <li><strong>Get an employment attorney to review your paperwork.</strong> Your contracts, your offer letters, your independent contractor agreements. This is not optional. Your mistakes here have consequences for real people.</li>
+            <li><strong>Make sure you can actually fill their caseload.</strong> Not in theory. Not "I've been getting a lot of inquiries lately." Actually fill it. A clinician who can't build a full caseload is a cost center, not a revenue driver — and that math moves fast.</li>
+          </ul>
+        </div>
+
+        <p>Group practice can be an extraordinary thing to build. I mean that. But it is a business — with all the weight, responsibility, and operational complexity that word carries.</p>
+
+        <p>The owners who thrive are the ones who stopped waiting for it to feel simple and started learning what it actually takes.</p>
+
+        <p>It's not passive. Not even a little.</p>
+
+        <p>But when you build it right, it's worth every bit of it.</p>
+
+        <!-- AUTHOR CARD -->
+        <aside class="author-card" aria-label="About the author">
+          <div class="avatar">
+            <img src="assets/photos/bailey-portrait.png"
+                 alt="Dr. Bailey Bryant, psychologist and group practice owner"
+                 onerror="this.parentElement.innerHTML='&lt;div style=&quot;width:100%;height:100%;display:flex;align-items:center;justify-content:center;background:var(--cream);color:var(--gold-warm);font-family:var(--font-display);font-size:1.6rem;&quot;&gt;BB&lt;/div&gt;';">
+          </div>
+          <div class="meta">
+            <p class="role">Written by</p>
+            <p class="name">Dr. Bailey Bryant</p>
+            <p style="color: var(--muted); margin-top: 4px;">Psychologist, group practice owner of 10+ years, and founder of Hello Studio. Helping practice owners build businesses that don't quietly burn them out.</p>
+          </div>
+        </aside>
+
+        <!-- CTA -->
+        <div class="post-cta-block">
+          <h3 style="font-family: var(--font-display); font-style: italic;">Thinking through your own transition?</h3>
+          <p>Studio 1:1s are open. Let's build it right from the start — before you sign a lease, post a job, or wonder why your income just went down.</p>
+          <a href="coaching.html#apply" class="btn btn-gold">Explore 1:1 Coaching <span class="arr">→</span></a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- RELATED POSTS -->
+  <section class="section bg-cream-deep">
+    <div class="container">
+      <div style="text-align: center; margin-bottom: var(--sp-7);">
+        <p class="eyebrow">Keep Reading</p>
+        <h2>More from <em class="serif-accent">the Journal</em></h2>
+      </div>
+      <div class="grid-3">
+        <article class="post-card">
+          <div class="post-meta"><span>Group Practice</span><span>·</span><span>9 min</span></div>
+          <h3><a href="journal-infrastructure-before-hire.html" style="border-bottom:none;color:inherit;">The Infrastructure You Need Before You Hire Anyone</a></h3>
+          <p class="post-snippet">The systems, contracts, finances, and paperwork that need to exist before your first clinician signs an offer letter.</p>
+          <a href="journal-infrastructure-before-hire.html" class="read-more">Read more →</a>
+        </article>
+        <article class="post-card">
+          <div class="post-meta"><span>Group Practice</span><span>·</span><span>7 min</span></div>
+          <h3><a href="journal-dont-market.html" style="border-bottom:none;color:inherit;">Don't Market Before You're Ready</a></h3>
+          <p class="post-snippet">The real risk of marketing too early isn't wasted money — it's losing the clients who were already looking for you.</p>
+          <a href="journal-dont-market.html" class="read-more">Read more →</a>
+        </article>
+        <article class="post-card">
+          <div class="post-meta"><span>Systems</span><span>·</span><span>9 min</span></div>
+          <h3><a href="journal-tech-stack.html" style="border-bottom:none;color:inherit;">The Tech Stack That Actually Runs a Group Practice</a></h3>
+          <p class="post-snippet">The tools that actually run our practice — what to set up first, what we ditched, and the one most owners sleep on.</p>
+          <a href="journal-tech-stack.html" class="read-more">Read more →</a>
+        </article>
+      </div>
+      <div style="text-align: center; margin-top: var(--sp-7);">
+        <a href="blog.html" class="btn btn-ghost">← Back to all essays</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SUBSCRIBE -->
+  <section class="section bg-pine">
+    <div class="container-narrow text-center" style="text-align: center;">
+      <p class="eyebrow">Studio Dispatch</p>
+      <h2>One thoughtful essay, <em class="serif-accent">every other Friday.</em></h2>
+      <p style="color: rgba(251,245,233,0.8); max-width: 560px; margin: 0 auto var(--sp-5);">No funnel tricks, no "as seen on" brag bar, no seven-email sequence. Just one honest thing about the business of running a practice.</p>
+      <form action="https://formsubmit.co/hello@hellostudio.online" method="POST" style="max-width: 440px; margin: 0 auto; display: flex; gap: 8px; flex-wrap: wrap;" data-email-to="hello@hellostudio.online" data-subject="Journal Subscribe signup — hellostudio.online" data-success-message="&lt;p style=&quot;color:var(--cream);margin:0;&quot;&gt;You're on the list! 💌&lt;/p&gt;">
+        <input type="email" name="email" placeholder="you@yourpractice.com" required style="flex:1; padding: 14px 18px; border: 0; border-radius: var(--r-pill); font-family: var(--font-sans); font-size: 1rem;">
+        <button type="submit" class="btn btn-gold">Subscribe</button>
+      </form>
+    </div>
+  </section>
+
+</article>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <img class="footer-logo" src="assets/logo/logo-mark.png" alt="Hello Studio">
+        <p style="color: rgba(251,245,233,0.7); max-width: 320px;">Tools and conversations that move you forward. A sister company to Hello Mental Health.</p>
+      </div>
+      <div>
+        <h4>Studio</h4>
+        <ul>
+          <li><a href="coaching.html">1:1 Coaching</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Resources</h4>
+        <ul>
+          <li><a href="vault.html">The Vault</a></li>
+          <li><a href="blog.html">Journal</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Visit</h4>
+        <ul>
+          <li>126 Wellington Place<br>Cincinnati, OH 45219</li>
+          <li><a href="https://hellomentalhealth.com">hellomentalhealth.com ↗</a></li>
+          <li><a href="https://www.instagram.com/hello.mentalhealth/">Instagram ↗</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Hello Studio. All rights reserved.</span>
+      <span>Powered by coffee, community, and creative brains everywhere.</span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

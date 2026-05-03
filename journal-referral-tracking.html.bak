@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO -->
+  <title>How to Track Referrals (And Why Most Practice Owners Never Do) | Hello Studio</title>
+  <meta name="description" content="A practical guide to tracking referrals in a therapy practice — what to capture, what reveals real signal, and how to use the data to make better marketing decisions. By Dr. Bailey Bryant.">
+  <meta name="keywords" content="referral tracking therapy practice, group practice referral sources, intake tracking, lead conversion therapy, practice marketing data, Therapy Flow CRM, therapy practice analytics, SEO for therapists, AI search therapists">
+  <meta name="author" content="Dr. Bailey Bryant">
+  <link rel="canonical" href="https://hellostudio.online/journal-referral-tracking.html">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="How to Track Referrals (And Why Most Practice Owners Never Do)">
+  <meta property="og:description" content="What to capture, what reveals real signal, and how to use the data to grow a group therapy practice intentionally.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://hellostudio.online/journal-referral-tracking.html">
+  <meta property="og:image" content="https://hellostudio.online/assets/photos/journal/referral-tracking-hero.jpg">
+  <meta property="og:site_name" content="Hello Studio">
+  <meta property="article:published_time" content="2026-05-03">
+  <meta property="article:author" content="Dr. Bailey Bryant">
+  <meta property="article:section" content="Systems">
+  <meta property="article:tag" content="Systems">
+  <meta property="article:tag" content="Marketing">
+  <meta property="article:tag" content="Referrals">
+  <meta property="article:tag" content="Group Practice">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="How to Track Referrals (And Why Most Practice Owners Never Do)">
+  <meta name="twitter:description" content="What to track, what reveals real signal, and how to use the data to make better marketing decisions in a therapy practice.">
+  <meta name="twitter:image" content="https://hellostudio.online/assets/photos/journal/referral-tracking-hero.jpg">
+
+  <!-- JSON-LD: Article schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "How to Track Referrals (And Why Most Practice Owners Never Do)",
+    "description": "A practical guide to tracking referrals in a therapy practice — what to capture, what reveals real signal, and how to use the data to make better marketing decisions.",
+    "image": "https://hellostudio.online/assets/photos/journal/referral-tracking-hero.jpg",
+    "datePublished": "2026-05-03",
+    "dateModified": "2026-05-03",
+    "author": {
+      "@type": "Person",
+      "name": "Dr. Bailey Bryant",
+      "url": "https://hellostudio.online/about.html",
+      "jobTitle": "Psychologist & Group Practice Owner",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Hello Mental Health"
+      }
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Hello Studio",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://hellostudio.online/assets/logo/logo-mark.png"
+      }
+    },
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://hellostudio.online/journal-referral-tracking.html"
+    },
+    "articleSection": "Systems",
+    "keywords": "referral tracking, intake conversion, therapy practice marketing data, Therapy Flow, SEO for therapists",
+    "wordCount": 1100,
+    "timeRequired": "PT7M"
+  }
+  </script>
+
+  <!-- JSON-LD: BreadcrumbList -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://hellostudio.online/"},
+      {"@type": "ListItem", "position": 2, "name": "Journal", "item": "https://hellostudio.online/blog.html"},
+      {"@type": "ListItem", "position": 3, "name": "How to Track Referrals", "item": "https://hellostudio.online/journal-referral-tracking.html"}
+    ]
+  }
+  </script>
+
+  <!-- JSON-LD: FAQ schema (for AI summarizers + Google rich results) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What should a therapy practice track for each new lead?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "At minimum: contact information, when they reached out, how they reached out (phone, email, website form, Psychology Today, etc.), how they heard about you, presenting issue, whether they scheduled, and if not, why not. Going further: whether they asked about a specific clinician, time of day and day of week, time-to-first-session, and whether they actually attended."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Why don't most practice owners track referrals?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Three reasons: tracking feels like admin and gets deferred, the payoff isn't immediate (patterns take time to emerge), and there's a quiet fear of what the data might show. If you've invested in a marketing channel for a year and the data shows it isn't working, that's hard to sit with — so it's easier not to look."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do I need a CRM to track referrals or is a spreadsheet enough?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A Google Sheet with the right columns is enough to begin. Graduate to a CRM (we use Therapy Flow) when the volume warrants it — the reporting is a significant step up from what a spreadsheet can do. The point isn't the tool, it's the habit."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How are AI search and SEO changing therapy practice referrals?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "When someone asks an AI tool like Claude or ChatGPT for a therapist recommendation, the practices that show up are the ones with visible, well-documented online presence — good website content, strong directory listings, consistent information across platforms. The fundamentals of SEO and the emerging world of AI search aren't as different as people think."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+  <script src="js/thinkific-links.js" defer></script>
+
+  <!-- Article-specific styles (scoped, additive) -->
+  <style>
+    .article-hero {
+      position: relative;
+      padding: clamp(2.5rem, 7vw, 5rem) 0 clamp(2rem, 5vw, 3.5rem);
+      background: var(--cream);
+      overflow: hidden;
+    }
+    .article-hero .container-narrow { position: relative; z-index: 2; }
+    .article-hero .eyebrow-row {
+      display: flex; gap: var(--sp-3); align-items: center; justify-content: center;
+      margin-bottom: var(--sp-5); flex-wrap: wrap;
+    }
+    .article-hero h1 {
+      font-size: clamp(2.2rem, 5vw, 3.6rem);
+      text-align: center;
+      max-width: 800px;
+      margin: 0 auto var(--sp-5);
+    }
+    .article-hero .lead { text-align: center; max-width: 720px; margin: 0 auto var(--sp-6); }
+    .article-byline {
+      display: flex; gap: var(--sp-3); align-items: center; justify-content: center;
+      color: var(--muted); font-size: 0.88rem; text-transform: uppercase;
+      letter-spacing: 0.08em; font-weight: 600; flex-wrap: wrap;
+    }
+    .article-byline .dot { color: var(--gold); }
+
+    .hero-image-wrap {
+      max-width: 1080px; margin: 0 auto; padding: 0 var(--sp-6);
+      margin-top: var(--sp-7);
+    }
+    .hero-image {
+      width: 100%; aspect-ratio: 16 / 9; overflow: hidden;
+      border-radius: var(--r-lg); box-shadow: var(--shadow-lg);
+      background: linear-gradient(135deg, rgba(30,98,86,0.08), rgba(227,184,77,0.10));
+    }
+    .hero-image img { width: 100%; height: 100%; object-fit: cover; display: block; }
+
+    .article-body { padding: var(--sp-8) 0 var(--sp-9); }
+    .article-body .container-narrow { max-width: 720px; }
+    .article-body p {
+      font-size: 1.12rem; line-height: 1.75; color: var(--ink-soft);
+      margin: 0 0 var(--sp-5);
+    }
+    .article-body h2 {
+      font-size: clamp(1.6rem, 3vw, 2.2rem);
+      margin: var(--sp-8) 0 var(--sp-4);
+      color: var(--pine-deep);
+    }
+    .article-body h2:first-of-type { margin-top: var(--sp-4); }
+    .article-body strong { color: var(--pine-deep); font-weight: 600; }
+    .article-body a:not(.btn) {
+      color: var(--gold-warm); border-bottom: 1px solid rgba(184,130,25,0.35);
+    }
+
+    .pull-quote {
+      font-family: var(--font-display);
+      font-style: italic;
+      font-size: clamp(1.5rem, 2.6vw, 2rem);
+      line-height: 1.35;
+      color: var(--pine-deep);
+      border-left: 4px solid var(--gold);
+      padding: var(--sp-3) 0 var(--sp-3) var(--sp-5);
+      margin: var(--sp-7) 0;
+    }
+
+    .inline-image {
+      margin: var(--sp-7) calc(-1 * var(--sp-5));
+      border-radius: var(--r-md);
+      overflow: hidden;
+      box-shadow: var(--shadow-md);
+      aspect-ratio: 16 / 9;
+      background: linear-gradient(135deg, rgba(30,98,86,0.06), rgba(227,184,77,0.08));
+    }
+    .inline-image img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    @media (max-width: 720px) {
+      .inline-image { margin-left: 0; margin-right: 0; }
+    }
+
+    .key-takeaways {
+      background: var(--cream-deep);
+      border-radius: var(--r-md);
+      padding: var(--sp-6);
+      margin: var(--sp-7) 0;
+      border-left: 4px solid var(--teal);
+    }
+    .key-takeaways h3 {
+      margin-top: 0;
+      font-family: var(--font-sans);
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      color: var(--teal);
+      font-weight: 700;
+    }
+    .key-takeaways ul {
+      margin: 0; padding-left: 1.2rem; font-size: 1rem;
+    }
+    .key-takeaways li {
+      margin-bottom: var(--sp-3);
+      color: var(--ink-soft);
+      line-height: 1.55;
+    }
+
+    .author-card {
+      display: flex; gap: var(--sp-5); align-items: center;
+      padding: var(--sp-6); margin: var(--sp-8) 0 var(--sp-6);
+      background: var(--cream-deep); border-radius: var(--r-md);
+    }
+    .author-card .avatar {
+      width: 84px; height: 84px; border-radius: 50%; overflow: hidden;
+      flex-shrink: 0; background: var(--cream);
+    }
+    .author-card .avatar img { width: 100%; height: 100%; object-fit: cover; }
+    .author-card .meta p { margin: 0; font-size: 1rem; line-height: 1.5; }
+    .author-card .meta .name {
+      font-family: var(--font-display); font-size: 1.3rem; color: var(--pine-deep);
+      margin-bottom: 4px;
+    }
+    .author-card .meta .role {
+      color: var(--muted); font-size: 0.88rem;
+      text-transform: uppercase; letter-spacing: 0.08em; font-weight: 600;
+    }
+    @media (max-width: 600px) {
+      .author-card { flex-direction: column; text-align: center; }
+    }
+
+    .post-cta-block {
+      background: var(--pine);
+      color: var(--cream);
+      padding: var(--sp-7);
+      border-radius: var(--r-lg);
+      text-align: center;
+      margin: var(--sp-7) 0 var(--sp-5);
+    }
+    .post-cta-block h3 {
+      color: var(--cream);
+      font-size: 1.6rem;
+      margin-bottom: var(--sp-3);
+      font-family: var(--font-display);
+      font-style: italic;
+      font-weight: 400;
+    }
+    .post-cta-block p {
+      color: rgba(251,245,233,0.85);
+      max-width: 480px;
+      margin: 0 auto var(--sp-5);
+      font-size: 1.02rem;
+    }
+
+    /* Tracking field reference table */
+    .field-table {
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: var(--r-md);
+      padding: 0;
+      margin: var(--sp-6) 0;
+      overflow: hidden;
+    }
+    .field-table .row {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      border-bottom: 1px solid var(--line);
+      padding: var(--sp-4) var(--sp-5);
+      gap: var(--sp-4);
+    }
+    .field-table .row:last-child { border-bottom: 0; }
+    .field-table .row.header {
+      background: var(--cream-deep);
+      font-family: var(--font-sans);
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--gold-warm);
+      font-weight: 700;
+    }
+    .field-table .row .field {
+      font-weight: 600;
+      color: var(--pine-deep);
+      font-size: 0.95rem;
+    }
+    .field-table .row .why {
+      color: var(--ink-soft);
+      font-size: 0.95rem;
+      line-height: 1.5;
+    }
+    @media (max-width: 600px) {
+      .field-table .row { grid-template-columns: 1fr; gap: var(--sp-2); }
+      .field-table .row.header { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="brand" aria-label="Hello Studio — home"><img src="assets/logo/logo-mark.png" alt="" class="brand-logo" onerror="this.remove(); document.querySelector('.brand-text').style.display='inline';"><span class="brand-text">Hello <em>Studio</em></span></a>
+    <nav aria-label="Primary">
+      <ul class="nav-links">
+        <li><a href="about.html">About</a></li>
+        <li><a href="coaching.html">1:1 Coaching</a></li>
+        <li><a href="vault.html">The Vault</a></li>
+        <li><a href="blog.html" aria-current="page">Journal</a></li>
+      </ul>
+    </nav>
+    <a href="coaching.html#apply" class="btn btn-gold btn-small nav-cta">Work with us <span class="arr">→</span></a>
+    <button class="nav-toggle" aria-label="Toggle menu" onclick="document.querySelector('.mobile-drawer').classList.toggle('is-open')">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+  </div>
+  <div class="mobile-drawer">
+    <ul>
+      <li><a href="about.html">About</a></li>
+      <li><a href="coaching.html">1:1 Coaching</a></li>
+      <li><a href="vault.html">The Vault</a></li>
+      <li><a href="blog.html">Journal</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+</header>
+
+<article itemscope itemtype="https://schema.org/Article">
+
+  <!-- ARTICLE HERO -->
+  <section class="article-hero">
+    <div class="container-narrow">
+      <div class="eyebrow-row">
+        <a href="blog.html" style="color: var(--muted); font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.18em; font-weight: 600; border-bottom: none;">← The Journal</a>
+        <span style="color: var(--gold);">·</span>
+        <span class="eyebrow">Systems</span>
+      </div>
+      <h1 itemprop="headline">How to Track Referrals <em class="serif-accent">(And Why Most Practice Owners Never Do)</em></h1>
+      <p class="lead" itemprop="description">What to capture, what reveals real signal, and how to turn referral data into the kind of clarity that lets you grow a therapy practice on purpose instead of by accident.</p>
+      <div class="article-byline">
+        <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="name">Bailey Bryant</span></span>
+        <span class="dot">·</span>
+        <span>7 min read</span>
+        <span class="dot">·</span>
+        <time datetime="2026-05-03" itemprop="datePublished">May 2026</time>
+      </div>
+    </div>
+    <div class="hero-image-wrap">
+      <div class="hero-image">
+        <img src="assets/photos/journal/referral-tracking-hero.jpg"
+             alt="A laptop displaying a clean spreadsheet of referral data on a desk — the kind of simple tracking system that turns intake guesswork into pattern recognition."
+             itemprop="image"
+             onerror="this.parentElement.innerHTML='&lt;div style=&quot;width:100%;height:100%;display:flex;align-items:center;justify-content:center;text-align:center;color:var(--muted);font-style:italic;padding:0 var(--sp-5);background:linear-gradient(135deg,rgba(30,98,86,0.08),rgba(227,184,77,0.10));&quot;&gt;Hero image placeholder&lt;br&gt;&lt;span style=&quot;font-size:0.75rem;&quot;&gt;assets/photos/journal/referral-tracking-hero.jpg&lt;/span&gt;&lt;/div&gt;';">
+      </div>
+    </div>
+  </section>
+
+  <!-- ARTICLE BODY -->
+  <section class="article-body bg-cream">
+    <div class="container-narrow">
+      <div itemprop="articleBody">
+
+        <p>When I started tracking referrals, I was hoping to find a pattern. One strong source I could lean into, nurture intentionally, and build a reliable pipeline around.</p>
+
+        <p>What I actually found was that clients were coming from everywhere. Multiple directories. Word of mouth. Google searches. Networking relationships I'd built years earlier. Social media. A few I genuinely couldn't trace.</p>
+
+        <p>There was no single lever. There was a landscape — and it required tending in every direction.</p>
+
+        <p>That was humbling. It was also one of the most useful things I've learned about running a group practice, because it changed how I thought about marketing entirely. Less hunting for the magic channel. More consistent presence across all of them.</p>
+
+        <p>But none of that insight was available to me until I had data. And <strong>most practice owners don't have data. They have impressions.</strong></p>
+
+        <h2>Why most people don't track</h2>
+
+        <p>Partly it's time. Tracking feels like admin, and admin feels like the thing you do after the real work is done. Partly it's that the payoff isn't immediate — you have to collect data for a while before patterns emerge. And partly, I think, it's that practice owners are a little afraid of what they might find.</p>
+
+        <p>If you've been investing in a particular marketing effort for a year and the data shows it isn't driving clients, that's a hard thing to sit with. <em>It's easier not to look.</em></p>
+
+        <p>But not looking doesn't make the problem go away. It just means you're making decisions without information — which is expensive in ways that don't always show up until later.</p>
+
+        <h2>What to actually track</h2>
+
+        <p>Start with the basics: contact information, when they reached out, how they reached out (phone, email, website form, Psychology Today, etc.), how they heard about you, their presenting issue, whether they scheduled, and if they didn't — <strong>why not.</strong></p>
+
+        <p>That last field is where the real signal lives. <em>"Not the right fit," "couldn't afford fees," and "never responded to follow-up"</em> tell you completely different things. The pattern in that column will eventually point you toward something actionable.</p>
+
+        <p>Beyond the basics, here's what I've found genuinely useful to capture:</p>
+
+        <div class="field-table">
+          <div class="row header">
+            <div class="field">Field</div>
+            <div class="why">Why it matters</div>
+          </div>
+          <div class="row">
+            <div class="field">Asked about a specific clinician?</div>
+            <div class="why">Tells you whether your individual clinicians have their own referral pull — which matters for hiring, marketing, and seeing who's building a reputation.</div>
+          </div>
+          <div class="row">
+            <div class="field">Time of day &amp; day of week</div>
+            <div class="why">Shapes your intake response strategy. If a chunk of leads come in on Saturday mornings and nobody's responding until Monday afternoon, you're losing them to faster competitors.</div>
+          </div>
+          <div class="row">
+            <div class="field">Time-to-first-session</div>
+            <div class="why">Long lag times between inquiry and first appointment are a quiet killer. People lose momentum. Life intervenes. Shorter path = better conversion.</div>
+          </div>
+          <div class="row">
+            <div class="field">Attended first session?</div>
+            <div class="why">Scheduled doesn't mean shown. A high no-show rate for first appointments specifically is its own problem worth investigating.</div>
+          </div>
+        </div>
+
+        <figure class="inline-image">
+          <img src="assets/photos/journal/referral-tracking-data.jpg"
+               alt="A close-up of analytics or a referral dashboard on a screen — the kind of visibility that turns marketing decisions from guesswork into informed choices."
+               onerror="this.parentElement.innerHTML='&lt;div style=&quot;width:100%;height:100%;display:flex;align-items:center;justify-content:center;text-align:center;color:var(--muted);font-style:italic;padding:0 var(--sp-5);background:linear-gradient(135deg,rgba(30,98,86,0.06),rgba(227,184,77,0.08));&quot;&gt;Image placeholder&lt;br&gt;&lt;span style=&quot;font-size:0.75rem;&quot;&gt;assets/photos/journal/referral-tracking-data.jpg&lt;/span&gt;&lt;/div&gt;';">
+        </figure>
+
+        <h2>The landscape is always changing</h2>
+
+        <p>Here's the thing about referral sources that makes consistent tracking non-negotiable: <strong>what works today may not work in a year.</strong></p>
+
+        <p>The practice owners I see struggle most are the ones who found something that worked, leaned into it exclusively, and then got caught flat-footed when it stopped performing. Directories that used to be reliable become saturated. Algorithm changes shift who gets found on search. A strong referral relationship moves practices or retires.</p>
+
+        <p>Diversification isn't just a nice idea — it's protection. When you're tracking across sources, you notice early when something starts to slip. <em>You're not dependent on any single channel holding steady.</em></p>
+
+        <h2>Nurturing referral relationships</h2>
+
+        <p>Once you know where your clients are coming from, the work is keeping those relationships alive — and this part is more relational than it is systematic.</p>
+
+        <p>For us, that looks like staying in regular contact with strong referral sources. Reaching out to check in, not just when we need something. Referring clients back to the people who send clients to us. And connecting good referrers with other people in our network — not because there's a direct return on it, but because <strong>supporting the people who support you is how strong professional networks actually function.</strong></p>
+
+        <p>The best referral relationships feel like genuine professional friendships. They're built over time, maintained with consistency, and not transactional. <em>The data tells you who to invest in. The relationship is still up to you.</em></p>
+
+        <h2>The source most practice owners underestimate</h2>
+
+        <p>Search engine optimization — and increasingly, <strong>AI optimization.</strong></p>
+
+        <p>Most practice owners understand, at least conceptually, that showing up on Google matters. Fewer are thinking intentionally about what it takes to rank well, and almost none are yet thinking about how to show up when someone asks an AI tool for a therapist recommendation.</p>
+
+        <p>That landscape is shifting fast. When someone asks Claude or ChatGPT for a group practice that specializes in anxiety in Cincinnati, the practices that show up are the ones that have built a visible, well-documented online presence — good website content, strong directory listings, consistent information across platforms. <strong>The fundamentals of SEO and the emerging world of AI search aren't as different as people think.</strong></p>
+
+        <blockquote class="pull-quote">
+          It's early. But practice owners who start paying attention to this now will have a meaningful head start.
+        </blockquote>
+
+        <figure class="inline-image">
+          <img src="assets/photos/journal/referral-tracking-search.jpg"
+               alt="A laptop screen showing a search engine results page — illustrating how visibility in Google and AI tools is becoming a key referral channel for therapy practices."
+               onerror="this.parentElement.innerHTML='&lt;div style=&quot;width:100%;height:100%;display:flex;align-items:center;justify-content:center;text-align:center;color:var(--muted);font-style:italic;padding:0 var(--sp-5);background:linear-gradient(135deg,rgba(30,98,86,0.06),rgba(227,184,77,0.08));&quot;&gt;Image placeholder&lt;br&gt;&lt;span style=&quot;font-size:0.75rem;&quot;&gt;assets/photos/journal/referral-tracking-search.jpg&lt;/span&gt;&lt;/div&gt;';">
+        </figure>
+
+        <h2>How data actually changes decisions</h2>
+
+        <p>Here's a concrete example: we've used referral tracking data to decide whether or not to continue a paid marketing effort. When you can see — clearly, in a report — that a channel is generating leads but those leads aren't converting, or that the cost per acquired client doesn't pencil out, you can make a clean decision. <em>No gut feeling required. No sunk cost confusion.</em></p>
+
+        <p>That kind of clarity is only available when you've been tracking consistently. <strong>The spreadsheet you build in year one becomes the data set that informs your decisions in year two.</strong></p>
+
+        <p>Start simple. A Google Sheet with the right columns is enough to begin. Graduate to a CRM when the volume warrants it — we use <strong>Therapy Flow</strong>, and the reporting it produces now is a significant step up from what a spreadsheet can do.</p>
+
+        <p>But the point isn't the tool. <strong>The point is the habit.</strong></p>
+
+        <div class="key-takeaways">
+          <h3>The Core Discipline</h3>
+          <ul>
+            <li>Track every lead — every single one, no exceptions.</li>
+            <li>Capture <em>why</em> people don't convert, not just <em>that</em> they didn't.</li>
+            <li>Look at the data regularly. Weekly is ideal. Monthly minimum.</li>
+            <li>Let it tell you something — and be willing to act on what it says.</li>
+          </ul>
+        </div>
+
+        <p>Because the practice owners who grow intentionally aren't the ones who got lucky with one great referral source. <em>They're the ones who paid attention to everything.</em></p>
+
+        <!-- AUTHOR CARD -->
+        <aside class="author-card" aria-label="About the author">
+          <div class="avatar">
+            <img src="assets/photos/bailey-portrait.png"
+                 alt="Dr. Bailey Bryant, psychologist and group practice owner"
+                 onerror="this.parentElement.innerHTML='&lt;div style=&quot;width:100%;height:100%;display:flex;align-items:center;justify-content:center;background:var(--cream);color:var(--gold-warm);font-family:var(--font-display);font-size:1.6rem;&quot;&gt;BB&lt;/div&gt;';">
+          </div>
+          <div class="meta">
+            <p class="role">Written by</p>
+            <p class="name">Dr. Bailey Bryant</p>
+            <p style="color: var(--muted); margin-top: 4px;">Psychologist, group practice owner of 10+ years, and founder of Hello Studio. Helping practice owners build businesses that don't quietly burn them out.</p>
+          </div>
+        </aside>
+
+        <!-- CTA -->
+        <div class="post-cta-block">
+          <h3>Want a referral tracking template to get started?</h3>
+          <p>Check <a href="vault.html" style="color: var(--gold-soft); border-bottom: 1px solid rgba(227,184,77,0.4);">The Vault</a> — or if you want to think through your full intake system, Studio 1:1s are open.</p>
+          <a href="coaching.html#apply" class="btn btn-gold">Explore 1:1 Coaching <span class="arr">→</span></a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- RELATED POSTS -->
+  <section class="section bg-cream-deep">
+    <div class="container">
+      <div style="text-align: center; margin-bottom: var(--sp-7);">
+        <p class="eyebrow">Keep Reading</p>
+        <h2>More from <em class="serif-accent">the Journal</em></h2>
+      </div>
+      <div class="grid-3">
+        <article class="post-card">
+          <div class="post-meta"><span>Group Practice</span><span>·</span><span>7 min</span></div>
+          <h3><a href="journal-dont-market.html" style="border-bottom:none;color:inherit;">Don't Market Before You're Ready</a></h3>
+          <p class="post-snippet">The real risk of marketing too early isn't wasted money — it's losing the clients who were already looking for you.</p>
+          <a href="journal-dont-market.html" class="read-more">Read more →</a>
+        </article>
+        <article class="post-card">
+          <div class="post-meta"><span>Systems</span><span>·</span><span>9 min</span></div>
+          <h3><a href="journal-tech-stack.html" style="border-bottom:none;color:inherit;">The Tech Stack That Actually Runs a Group Practice</a></h3>
+          <p class="post-snippet">EHR, payroll, CRM, analytics, AI — the tools running our practice. What to set up first, what we ditched, and the one most owners sleep on.</p>
+          <a href="journal-tech-stack.html" class="read-more">Read more →</a>
+        </article>
+        <article class="post-card">
+          <div class="post-meta"><span>Group Practice</span><span>·</span><span>8 min</span></div>
+          <h3><a href="journal-marketing-sales-availability.html" style="border-bottom:none;color:inherit;">Is It a Marketing Problem, a Sales Problem, or an Availability Problem?</a></h3>
+          <p class="post-snippet">Most growth issues are misdiagnosed. A framework for telling them apart — plus the benchmarks that name what you're actually solving.</p>
+          <a href="journal-marketing-sales-availability.html" class="read-more">Read more →</a>
+        </article>
+      </div>
+      <div style="text-align: center; margin-top: var(--sp-7);">
+        <a href="blog.html" class="btn btn-ghost">← Back to all essays</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SUBSCRIBE -->
+  <section class="section bg-pine">
+    <div class="container-narrow text-center" style="text-align: center;">
+      <p class="eyebrow">Studio Dispatch</p>
+      <h2>One thoughtful essay, <em class="serif-accent">every other Friday.</em></h2>
+      <p style="color: rgba(251,245,233,0.8); max-width: 560px; margin: 0 auto var(--sp-5);">No funnel tricks, no "as seen on" brag bar, no seven-email sequence. Just one honest thing about the business of running a practice.</p>
+      <form action="https://formsubmit.co/hello@hellostudio.online" method="POST" style="max-width: 440px; margin: 0 auto; display: flex; gap: 8px; flex-wrap: wrap;" data-email-to="hello@hellostudio.online" data-subject="Journal Subscribe signup — hellostudio.online" data-success-message="&lt;p style=&quot;color:var(--cream);margin:0;&quot;&gt;You're on the list! 💌&lt;/p&gt;">
+        <input type="email" name="email" placeholder="you@yourpractice.com" required style="flex:1; padding: 14px 18px; border: 0; border-radius: var(--r-pill); font-family: var(--font-sans); font-size: 1rem;">
+        <button type="submit" class="btn btn-gold">Subscribe</button>
+      </form>
+    </div>
+  </section>
+
+</article>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <img class="footer-logo" src="assets/logo/logo-mark.png" alt="Hello Studio">
+        <p style="color: rgba(251,245,233,0.7); max-width: 320px;">Tools and conversations that move you forward. A sister company to Hello Mental Health.</p>
+      </div>
+      <div>
+        <h4>Studio</h4>
+        <ul>
+          <li><a href="coaching.html">1:1 Coaching</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Resources</h4>
+        <ul>
+          <li><a href="vault.html">The Vault</a></li>
+          <li><a href="blog.html">Journal</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Visit</h4>
+        <ul>
+          <li>126 Wellington Place<br>Cincinnati, OH 45219</li>
+          <li><a href="https://hellomentalhealth.com">hellomentalhealth.com ↗</a></li>
+          <li><a href="https://www.instagram.com/hello.mentalhealth/">Instagram ↗</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Hello Studio. All rights reserved.</span>
+      <span>Powered by coffee, community, and creative brains everywhere.</span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
