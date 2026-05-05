@@ -54,6 +54,18 @@
         })
         .then(function () {
           form.innerHTML = successHTML;
+
+          // Fire GA4 conversion event if analytics is loaded.
+          // Event name comes from data-ga-event (default: form_submit).
+          // Recommended GA4 names: generate_lead, sign_up, contact, form_submit.
+          if (typeof window.gtag === 'function') {
+            const eventName = form.getAttribute('data-ga-event') || 'form_submit';
+            window.gtag('event', eventName, {
+              form_name: subject,
+              page_location: window.location.href,
+              page_path: window.location.pathname,
+            });
+          }
         })
         .catch(function () {
           form.innerHTML = FALLBACK_HTML(email);
